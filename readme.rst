@@ -1,70 +1,38 @@
 ###################
-What is CodeIgniter
+StudentPlaza
 ###################
-
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+In dit project staat de communicatie van studenten  met elkaar centraal.
+Dit platform zal features bevatten zodat studenten met elkaar kunnen communiceren.
+Docenten zullen hier staff zijn. Dit houd in dat zij het platform in de gaten houden om slecht gedrag en ondersteuning naar studenten met problemen met hun account.
+Ook roosters zijn hier te vinden. 
+Studenten met een persoonlijk probleem krijgen de mogelijkheid om annoniem hulp te vragen aan het zorgteam en studenten.
 
 *******************
-Release Information
+verderen feature beschrijving (per stuk)
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+- Login portaal
+  Er zal een login portaal komen die het benaderen van de site zelf hinderd. Alleen studenten en docenten  van het Davinci college zijn toegestaan deze site te benaderen.
+  Docenten krijgen de mogelijkheid om accounts aan te maken/aan te passen en te verwijderen. 
+
+- Forum
+  Een forum is bedoeld voor iedereen (Studenten en docenten). Hier kan gezellig topics aangemaakt worden maar ook serieuze topics.
+
+- Live Chat
+  Op de Live chat kunnen studenten gezellig met elkaar praten. de chat zal een ingebouwde filter krijgen dat zorgt dat zoveel mogelijk scheld worden worden gefilterd. Regels over chat gebruik is nog niet gemaakt.
+  
+- Zorgteam feature
+  Vaak durven studenten geen hulp te vragen als ze een persoonlijk probleem hebben. Daarom maken wij het wat makkelijker voor hun door een zorgteam feature toe te voegen. Hier kunnen studenten met een persoonlijk probleem om hulp vragen.
+  Het zorgteam krijgt de verzoek binnen. de verzoek word dan beoordeeld. mocht het probleem niet super erg zijn kan het door verwezen naar een student (de student is alleen zichtbaar voor de zorgteam).
+
+- Feedback feature 
+  Er zijn vaak veel klachten over docenten of school zelf. Vaak worden klachten pas aangepakt als er meerdere keren dezelfde klacht is ingediend.
+  nu kunnen studenten een klacht indienen waar mede studenten een "mee-eens" of een "oneens" kunnen geven. Docenten kunnen hier op reageren.
+  Docenten waarover de klacht gaat zijn niet toegestaan de klachtende persoon te straffen.
 
 **************************
-Changelog and New Features
+Log
 **************************
+04-09-2017
+Team heeft eerste iteratie. Studenten moesten de tutorial maken van de framework die gebruikt word bij dit project.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
