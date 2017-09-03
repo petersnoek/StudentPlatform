@@ -42,7 +42,7 @@ verderen feature beschrijving (per stuk)
 **************************
 Log
 **************************
-[04-09-2017] [9:00]:
+**[04-09-2017  9:00]:**
 
-Team heeft eerste iteratie. Studenten moesten de tutorial maken van de framework die gebruikt word bij dit project.
+> Team heeft eerste iteratie. Studenten moesten de tutorial maken van de framework die gebruikt word bij dit project.
 
