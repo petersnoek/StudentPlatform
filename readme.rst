@@ -34,6 +34,10 @@ verderen feature beschrijving (per stuk)
   Er zijn vaak veel klachten over docenten of school zelf. Vaak worden klachten pas aangepakt als er meerdere keren dezelfde klacht is ingediend.
   nu kunnen studenten een klacht indienen waar mede studenten een "mee-eens" of een "oneens" kunnen geven. Docenten kunnen hier op reageren.
   Docenten waarover de klacht gaat zijn niet toegestaan de klachtende persoon te straffen.
+  
+- **Roosters**
+	
+  Studenten kunnen nu het rooster bekijken en hun mening hier overgeven.
 
 **************************
 Log
