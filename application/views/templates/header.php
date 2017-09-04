@@ -1,7 +1,7 @@
 <html>
 
     <head>
-        <title>CodeIgniter Tutorial</title>
+        <title>StudentPlaza</title>
     </head>
     <body>
 
