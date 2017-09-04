@@ -1,5 +1,6 @@
 <?php
-class register extends CI_Controller {
+class register extends CI_Controller 
+{
 
         public function __construct()
         {
@@ -23,15 +24,13 @@ class register extends CI_Controller {
 
 			if ($this->form_validation->run() === FALSE)
 			{
-				$this->load->view('templates/header', $data);
-				$this->load->view('view/register');
-				$this->load->view('templates/footer');
-
+				$this->load->view('register', $data);
 			}
 			else
 			{
+				$this->load->model('register_model');
 				$this->register_model->set_user();
-				$this->load->view('register/success');
+				$this->load->view('register');
 			}
 		}
 	}
