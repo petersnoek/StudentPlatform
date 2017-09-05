@@ -15,12 +15,12 @@ class Example extends CI_Controller
 
         $this->session->set_flashdata('error_id', 'U bent nog niet ingelogd');//message rendered
     	$this->session->set_flashdata('seconds_redirect', 5);//time to be redirected (in seconds)
-    	$this->session->set_flashdata('url_redirect', base_url('pages/home'));//url to be redirected
+    	$this->session->set_flashdata('url_redirect', base_url('pages/inside'));//url to be redirected
 
     	$this->load->view('templates/header', $data);
         $this->load->view('example');
         $this->load->view('templates/footer', $data);
 
-    	redirect('pages/home');
+    	redirect('pages/inside');
     }
 }

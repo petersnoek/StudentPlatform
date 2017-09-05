@@ -1,0 +1,13 @@
+body{
+    background-color:red;
+    color: white;
+}
+a{
+  color: white;
+}
+a:active{
+    color:white;
+}
+a:hover{
+    color:yellow;
+}

@@ -8,7 +8,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="">Home</a>
+    <a class="navbar-brand" href="">studentplaza index</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,8 +25,7 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
 
-
-        <button type="button" href="" class="btn btn-primary">Login</button>
-        <button type="button" href="" class="btn btn-danger">Logout</button>
+        </ul>
+        <a href="login" class="btn btn-primary">Login</a>
     </div>
 </nav>

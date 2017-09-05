@@ -20,8 +20,10 @@ class Login_model extends CI_Model{
         $this->db->from('users');
         $this->db->where(array('username'=>$username, 'password'=>$password));
         $query = $this->db->get();
+
         if($query->num_rows() > 0) {
             $user = $query->row();
+
 
             if ($user->username) {
                 $this->session->set_flashdata('gelukt', 'je bent aangemeld');
@@ -29,11 +31,11 @@ class Login_model extends CI_Model{
                 $_SESSION['user_logged'] = TRUE;
                 $_SESSION['username'] = $user->username;
 
-                redirect('home', 'refresh');
+                redirect('inside', 'refresh');
             }
         }
         else{
-            $this->session->set_flashdata("ERROR", "Dit account bestaat niet!");
+            $this->session->set_flashdata("ERROR", "Gebruikersnaam of wachtwoord is onjuist!");
             redirect("login", "refresh");
 
         }

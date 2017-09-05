@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = 'login';
 $route['logout'] = 'logout';
-$route['home'] = 'home';
+$route['inside'] = 'inside';
 $route['register'] = 'register';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
