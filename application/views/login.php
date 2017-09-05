@@ -1,9 +1,9 @@
 <?php echo validation_errors(); ?>
 <?php
-if(isset($_SESSION['mislukt'])) {
+if(isset($_SESSION['ERROR'])) {
 
     ?>
-    <p><?php echo $_SESSION['mislukt']; ?></p>
+    <p><?php echo $_SESSION['ERROR']; ?></p>
     <?php
 }
 ?>
