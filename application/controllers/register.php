@@ -26,7 +26,7 @@ class register extends CI_Controller
 
             if ($this->form_validation->run() === FALSE)
             {
-                $this->load->view('register', $data);
+                $this-> load->view('register', $data);
             }
             else
             {

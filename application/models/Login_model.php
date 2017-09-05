@@ -32,7 +32,7 @@ class Login_model extends CI_Model{
             redirect('home', 'refresh');
         } else{
             $this->session->set_flashdata('error', "Dit account bestaat niet");
-            redirect('login', 'refresh');
+
         }
     }
 
