@@ -22,8 +22,9 @@ class login extends CI_Controller
 
         $data['title'] = 'Aanmelden';
 
-        $this->form_validation->set_rules('username', 'username', 'required');
-        $this->form_validation->set_rules('password', 'password', 'required');
+        $this->form_validation->set_rules('username', 'gebruikersnaam', 'required');
+        $this->form_validation->set_rules('password', 'wachtwoord', 'required');
+
 
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('login', $data);
