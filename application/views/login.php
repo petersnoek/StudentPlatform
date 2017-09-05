@@ -1,19 +1,28 @@
-<?php echo validation_errors(); ?>
-<?php
-if(isset($_SESSION['ERROR'])) {
+<html>
+    <head>
+        <title>Studentplaza - Aanmelden</title>
 
-    ?>
-    <p><?php echo $_SESSION['ERROR']; ?></p>
-    <?php
-}
-?>
-    <form action="" method="POST">
-<label for="username">gebruikersnaam:</label>
-<input name="username" type="text"/><br />
+        <link rel="stylesheet" type="text/css" href="/studentplaza/assets/css/style2.css"/>
+    </head>
+    <body>
+        <div class="log_bg"></div>
+        <form class="log_container" action="" method="POST">
+            <h3> Studentplaza</h3><br>
+            <?php echo validation_errors(); ?>
+            <?php
+            if(isset($_SESSION['ERROR'])) {
 
-<label for="password">wachtwoord:</label>
-<input name="password" type="password"/><br />
+                ?>
+                <p><?php echo $_SESSION['ERROR']; ?></p>
+                <?php
+            }
+            ?>
 
-<input type="submit" name="login" value="aanmelden" />
+                <input name="username" type="text" placeholder="Gebruikersnaam"/><br />
+                <input name="password" type="password" placeholder="wachtwoord"/><br />
 
-</form>
+                <input type="submit" name="login" value="aanmelden" />
+
+            </form>
+    </body>
+</html>
