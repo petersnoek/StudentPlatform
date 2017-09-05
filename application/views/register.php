@@ -1,39 +1,55 @@
-<!DOCTYPE html> 
-<html lang = "en"> 
+<!DOCTYPE html>
+<html lang = "en">
 
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Registreren</title> 
+   <head>
+      <meta charset = "utf-8">
+      <title>Registreren</title>
    </head>
-	
+
 <body>
 
-<h2><?php echo $title; ?></h2>
 
+<p> Registreer hier uw account. </p>
+
+<?php
+    if(isset($_SESSION['gelukt'])) {
+
+?>
+        <p><?php echo $_SESSION['gelukt']; ?></p>
+<?php
+    }
+?>
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('register'); ?>
 
-    <label for="firstname">Voornaam</label>
-    <input type="input" name="firstname" /><br />
+    <label for="username">gebruikersnaam:</label>
+    <input name="username" type="text"/><br />
 
-    <label for="prefix">Tussenvoegsel</label>
-    <input type="input" name="prefix" /><br />
+    <label for="password">wachtwoord:</label>
+    <input name="password" type="password"/><br />
 
-    <label for="lastname">Achternaam</label>
-    <input type="input" name="lastname" /><br />
+    <label for="password2">Herhaal wachtwoord:</label>
+    <input name="password2" type="password"/> <br />
 
-    <label for="email">Emailadres</label>
-    <input type="email" name="email" /><br />
+    <label for="email">Email adres</label>
+    <input name="email" type="text"/><br />
 
-    <label for="password">Wachtwoord</label>
-    <input type="password" name="password" /><br />
+    <label for="leerling_nr">leerling nummer:</label>
+    <input name="leerling_nr" type="text" /><br />
 
-    <label for="phone">Telefoonnummer</label>
-    <input type="input" name="phone" /><br />
+    <label for="klas">klas:</label>
+    <input name="klas" type="text" /><br />
 
-    <label for="studentnumber">Studentennummer</label>
-    <input type="input" name="studentnumber" /><br />
+
+    <label for="geslacht">uw geslacht</label>
+    <select id="geslacht" name="geslacht">
+        <option value="man">Man</option>
+        <option value="vrouw">Vrouw</option>
+    </select><br/>
+
+    <label for="geboortedatum">geboorte datum:</label>
+    <input type="date" name="geboortedatum" /><br />
 
 
     <input type="submit" name="submit" value="Registreer" />

@@ -9,18 +9,23 @@ class register_model extends CI_Model
 
 	public function set_user()
 	{
-		$this->load->helper('url');
+        $data = array(
+            'username' => $_POST['username'],
+            'password' =>md5($_POST['password']),
+            'email' => $_POST['email'],
+            'leerling_nr' => $_POST['leerling_nr'],
+            'klas' => $_POST['klas'],
+            'geslacht' => $_POST['geslacht'],
+            'geboortedatum' => $_POST['geboortedatum']
 
-		$data = array(
-			'firstname' => $this->input->post('firstname'),
-			'prefix' => $this->input->post('prefix'),
-			'lastname' => $this->input->post('lastname'),
-			'email' => $this->input->post('email'),
-			'password' => md5($this->input->post('password')),
-			'phone_number' => $this->input->post('phone'),
-			'student_number' => $this->input->post('studentnumber')
-		);
+        );
+        $this->db->insert('users', $data);
 
-		return $this->db->insert('users', $data);
-	}
+
+
+        $this->session->set_flashdata("gelukt", "Uw account is aangemaakt.");
+            redirect("register", "refresh");
+
+
+        }
 }
