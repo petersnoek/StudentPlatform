@@ -12,6 +12,28 @@ class Login_model extends CI_Model{
     {
         parent::__construct();
     }
+    public function  check_user(){
+        $username = $_POST['username'];
+        $password = md5($_POST['password']);
 
+        $this->db->select('*');
+        $this->db->from('users');
+        $this->db->where(array('username'=>$username, 'password'=>$password));
+        $query = $this->db->get();
+
+        $user = $query->row();
+
+        if($user->username){
+            $this->session->set_flashdata('gelukt', 'je bent aangemeld');
+
+            $_SESSION['user_logged'] = TRUE;
+            $_SESSION['username'] = $user->username;
+
+            redirect('home', 'refresh');
+        } else{
+            $this->session->set_flashdata('error', "Dit account bestaat niet");
+            redirect('login', 'refresh');
+        }
+    }
 
 }

@@ -13,7 +13,7 @@ class register extends CI_Controller
 			$this->load->helper('form');
 			$this->load->library('form_validation');
 
-			$data['title'] = 'Regstratie';
+			$data['title'] = 'Registratie';
 
 			$this->form_validation->set_rules('username', 'username', 'required');
 			$this->form_validation->set_rules('password', 'password', 'required|min_length[8]');

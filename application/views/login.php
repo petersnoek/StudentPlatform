@@ -1,4 +1,6 @@
-<?php echo form_open('login'); ?>
+<?php echo validation_errors(); ?>
+
+<form action="" method="POST">
 <label for="username">gebruikersnaam:</label>
 <input name="username" type="text"/><br />
 

@@ -41,7 +41,6 @@
     <label for="klas">klas:</label>
     <input name="klas" type="text" /><br />
 
-
     <label for="geslacht">uw geslacht</label>
     <select id="geslacht" name="geslacht">
         <option value="man">Man</option>
@@ -50,7 +49,6 @@
 
     <label for="geboortedatum">geboorte datum:</label>
     <input type="date" name="geboortedatum" /><br />
-
 
     <input type="submit" name="submit" value="Registreer" />
 
