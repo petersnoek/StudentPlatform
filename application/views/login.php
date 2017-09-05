@@ -18,8 +18,8 @@
             }
             ?>
 
-                <input name="username" type="text" placeholder="Gebruikersnaam"/><br />
-                <input name="password" type="password" placeholder="wachtwoord"/><br />
+                <input class="log_txt" name="username" type="text" placeholder="Gebruikersnaam"/><br />
+                <input class="log_txt" name="password" type="password" placeholder="wachtwoord"/><br />
 
                 <input type="submit" name="login" value="aanmelden" />
 

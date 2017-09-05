@@ -5,15 +5,7 @@
 body{
     color: white;
 }
-a{
-  color: white;
-}
-a:active{
-    color:white;
-}
-a:hover{
-    color:yellow;
-}
+/*styling van login pagina */
 .log_bg{
     width: 100%;
     height:100%;
@@ -30,7 +22,7 @@ a:hover{
 }
 
 .log_container{
-    background-color: lightblue;
+    background-color: rgb(247, 247, 247);
     color: black;
     width: 300px;
     height: 250px;
@@ -42,4 +34,30 @@ a:hover{
     margin-right: auto;
     margin-left: auto;;
     text-align: center;
+}
+
+.log_container .log_txt{
+    width: 70%;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    height: 25px;
+    border-radius: 4px;
+    background-color: rgb(232, 232, 232);
+    border-bottom: 2px solid rgb(150, 147, 147);
+    border-right: 1px solid rgb(150, 147, 147);
+
+}
+/*Styling na login pagina*/
+.inside{
+    background-color: red;
+}
+a{
+    color: white;
+}
+a:active{
+    color:white;
+}
+a:hover{
+    color:yellow;
 }
