@@ -24,7 +24,8 @@
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
-        </ul>
+
+
         <button type="button" href="" class="btn btn-primary">Login</button>
         <button type="button" href="" class="btn btn-danger">Logout</button>
     </div>

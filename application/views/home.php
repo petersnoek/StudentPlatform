@@ -7,3 +7,4 @@
  */
 ?>
 <h1> Welkom op de pagina <?php echo $_SESSION['username'];?></h1>
+<a href="<?php echo base_url();?>/index.php/logout">afmelden</a>
