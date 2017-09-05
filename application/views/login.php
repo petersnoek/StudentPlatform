@@ -8,7 +8,9 @@
         <div class="log_bg"></div>
         <form class="log_container" action="" method="POST">
             <h1><strong>Student</strong>plaza</h1><br>
-            <?php echo validation_errors(); ?>
+
+            <div class="ERROR_MSG"><?php echo validation_errors(); ?></div>
+
             <?php
             if(isset($_SESSION['ERROR'])) {
 
