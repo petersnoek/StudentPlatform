@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: DustDustin
- * Date: 04-Sep-17
- * Time: 5:41 PM
- */
+<?php echo form_open('login'); ?>
+<label for="username">gebruikersnaam:</label>
+<input name="username" type="text"/><br />
+
+<label for="password">wachtwoord:</label>
+<input name="password" type="password"/><br />
+
+<input type="submit" name="login" value="aanmelden" />
+
+</form>
