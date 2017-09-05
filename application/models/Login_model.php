@@ -33,7 +33,7 @@ class Login_model extends CI_Model{
             }
         }
         else{
-            $this->session->set_flashdata("mislukt", "Uw account is aangemaakt.");
+            $this->session->set_flashdata("mislukt", "Dit account bestaat niet!");
             redirect("login", "refresh");
 
         }
