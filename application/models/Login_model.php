@@ -20,19 +20,22 @@ class Login_model extends CI_Model{
         $this->db->from('users');
         $this->db->where(array('username'=>$username, 'password'=>$password));
         $query = $this->db->get();
+        if($query->num_rows() > 0) {
+            $user = $query->row();
 
-        $user = $query->row();
+            if ($user->username) {
+                $this->session->set_flashdata('gelukt', 'je bent aangemeld');
 
-        if($user->username){
-            $this->session->set_flashdata('gelukt', 'je bent aangemeld');
+                $_SESSION['user_logged'] = TRUE;
+                $_SESSION['username'] = $user->username;
 
-            $_SESSION['user_logged'] = TRUE;
-            $_SESSION['username'] = $user->username;
+                redirect('home', 'refresh');
+            }
+        }
+        else{
+            $this->session->set_flashdata("mislukt", "Dit account bestaat niet!");
+            redirect("login", "refresh");
 
-            redirect('home', 'refresh');
-        } else{
-            $this->session->set_flashdata('error', "Dit account bestaat niet");
-            redirect('login', 'refresh');
         }
     }
 

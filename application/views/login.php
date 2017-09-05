@@ -1,6 +1,13 @@
 <?php echo validation_errors(); ?>
+<?php
+if(isset($_SESSION['mislukt'])) {
 
-<form action="" method="POST">
+    ?>
+    <p><?php echo $_SESSION['mislukt']; ?></p>
+    <?php
+}
+?>
+    <form action="" method="POST">
 <label for="username">gebruikersnaam:</label>
 <input name="username" type="text"/><br />
 

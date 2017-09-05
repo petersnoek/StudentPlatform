@@ -26,7 +26,7 @@ class register extends CI_Controller
 
             if ($this->form_validation->run() === FALSE)
             {
-                $this->load->view('register', $data);
+                $this-> load->view('register', $data);
             }
             else
             {
@@ -34,5 +34,5 @@ class register extends CI_Controller
                 $this->register_model->set_user();
                 $this->session->set_flashdata("gelukt", "Uw account is aangemaakt.");
                 redirect("register", "refresh");
-            }
+        }
 	}}
