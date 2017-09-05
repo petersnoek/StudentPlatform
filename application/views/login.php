@@ -7,13 +7,13 @@
     <body>
         <div class="log_bg"></div>
         <form class="log_container" action="" method="POST">
-            <h3> Studentplaza</h3><br>
+            <h1><strong>Student</strong>plaza</h1><br>
             <?php echo validation_errors(); ?>
             <?php
             if(isset($_SESSION['ERROR'])) {
 
                 ?>
-                <p><?php echo $_SESSION['ERROR']; ?></p>
+                <p class="ERROR_MSG"><?php echo $_SESSION['ERROR']; ?></p>
                 <?php
             }
             ?>
@@ -21,7 +21,7 @@
                 <input class="log_txt" name="username" type="text" placeholder="Gebruikersnaam"/><br />
                 <input class="log_txt" name="password" type="password" placeholder="wachtwoord"/><br />
 
-                <input type="submit" name="login" value="aanmelden" />
+                <input class="log_btn" type="submit" name="login" value="aanmelden" />
 
             </form>
     </body>
