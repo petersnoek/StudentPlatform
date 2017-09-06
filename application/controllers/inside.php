@@ -12,7 +12,7 @@ class inside extends CI_Controller{
         parent::__construct();
         if(!isset($_SESSION['user_logged'])){
             $this->session->set_flashdata('ERROR','U moet eerst aanmelden voordat u toegang krijgt tot deze pagina!');
-            redirect('login');
+            header("Refresh:5; URL=login");
         }
     }
 
