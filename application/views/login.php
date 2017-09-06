@@ -2,6 +2,7 @@
     <head>
         <title>Studentplaza - Aanmelden</title>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/studentplaza/assets/css/style2.css"/>
     </head>
     <body>
@@ -15,15 +16,15 @@
             if(isset($_SESSION['ERROR'])) {
 
                 ?>
-                <p class="ERROR_MSG"><?php echo $_SESSION['ERROR']; ?></p>
+                <p class="label label-warning"><?php echo $_SESSION['ERROR']; ?></p>
                 <?php
             }
-            ?>
+            ?><br/>
 
-                <input class="log_txt" name="username" type="text" placeholder="Gebruikersnaam"/><br />
-                <input class="log_txt" name="password" type="password" placeholder="wachtwoord"/><br />
+                <input class="form-control log_txt" name="username" type="text" placeholder="Gebruikersnaam"/><br />
+                <input class="form-control log_txt" name="password" type="password" placeholder="wachtwoord"/><br />
 
-                <input class="log_btn" type="submit" name="login" value="aanmelden" />
+                <input class="btn btn-default log_btn" type="submit" name="login" value="aanmelden" />
 
             </form>
     </body>

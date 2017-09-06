@@ -25,7 +25,7 @@ body{
     background-color: rgb(247, 247, 247);
     color: black;
     width: 350px;
-    height: 225px;
+    height: auto;
     position:fixed;
     right: 0;
     left: 0;
@@ -42,11 +42,8 @@ body{
     margin-top: 5px;
     font-weight: bold;
     text-align: center;
-    height: 25px;
-    border-radius: 4px;
-    background-color: rgb(232, 232, 232);
-    border-bottom: 2px solid rgb(150, 147, 147);
-    border-right: 1px solid rgb(150, 147, 147);
+    margin-right: auto;
+    margin-left: auto;;
 
 }
 .log_container .log_btn{
@@ -54,6 +51,9 @@ body{
     height: 25px;
     font-weight:bold;
     margin-top: 25px;
+    margin-bottom:  1em;
+    text-align: center;
+    padding: 0;
 }
 .log_container h1{
     color: rgb(52, 199, 93);

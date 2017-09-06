@@ -57,7 +57,7 @@ $route['login'] = 'login';
 $route['logout'] = 'logout';
 $route['inside'] = 'inside';
 $route['register'] = 'register';
-$route['default_controller'] = 'pages/view';
+$route['default_controller'] = 'index';
 $route['(:any)'] = 'pages/view/$1';
 
 $route['example'] = 'example';

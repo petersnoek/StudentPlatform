@@ -1,6 +1,12 @@
-body{
-    background-color: green;
+
+.jumbotron{
+    background-image: url(http://1.bp.blogspot.com/_rjClYmFm1GU/TJjHO8gK7jI/AAAAAAAAA2g/uqffzAjqoJ4/s1600/blue.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0rem;
 }
-h1{
-    color: red;
+.grijs{
+    background-color: rgb(234, 237, 242);
 }
