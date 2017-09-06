@@ -1,11 +1,11 @@
 
-.jumbotron{
-    background-image: url(http://1.bp.blogspot.com/_rjClYmFm1GU/TJjHO8gK7jI/AAAAAAAAA2g/uqffzAjqoJ4/s1600/blue.png);
-    -webkit-background-size: cover;
+.jumbotron {
+    background-image: url(../img/header.jpg);
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0rem;
+    border-radius: 0 !important;
 }
 .grijs{
     background-color: rgb(234, 237, 242);

@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<div class="jumbotron jumbotron-fluid text-center">
     <h1>StudentPlaza</h1>
     <p>The social platform of MBO Gorinchem</p>
 </div>
