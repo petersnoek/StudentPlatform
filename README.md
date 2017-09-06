@@ -1,5 +1,5 @@
 # StudentPlaza 
-project van romy96, thommass en DustDustinn 
+project van romy96 en DustDustinn 
 ## Wat is StudentPlaza?
 Studentplaza is een studenten platform waar studenten & docenten met elkaar kunnen communiceren. Het platform is niet alleen bedoeld voor gezelligheid. Aan het platform komt ook het zorgteam aan vast. hierbij kunnen studenten om hulp vragen aan zorgbegeleiders.
 
