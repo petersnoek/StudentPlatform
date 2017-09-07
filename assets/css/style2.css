@@ -1,79 +1,103 @@
-*{
-    margin: 0;
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+/** HEADER STYLING **/
+.navbar{
+    background-color: #b8b8b8;
 }
-body{
-    color: white;
+.header{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 1.5rem;
+    height:36.4rem;
+    max-height:95%;
+    min-width:300px;
+    color:#eee;
 }
-/*styling van login pagina */
-.log_bg{
-    width: 100%;
+.header:after{
+    content:"";
+    width:100%;
     height:100%;
-    background-image: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-46.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    position: fixed;
-
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:-1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+    background:#1B2030 url(https://wallpaperlayer.com/img/2015/10/forest-background-8698-9026-hd-wallpapers.jpg) top center no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    animation: grow 60s  linear 10ms infinite;
+    transition:all 0.2s ease-in-out;
+    z-index:-2
+}
+.header a{
+    color:#eee
 }
 
-.log_container{
-    background-color: rgb(247, 247, 247);
-    color: black;
-    width: 350px;
-    height: auto;
-    position:fixed;
-    right: 0;
-    left: 0;
-    top: 25%;
-    margin-right: auto;
-    margin-left: auto;;
+.info{
+    width:100%;
+    padding:10% 10% 10% 10%;
+    text-align:center;
+    font-size: 20px;
+    text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+
+
+@keyframes grow{
+    0% { transform:scale(1)}
+    50% { transform:scale(1.2)}
+}
+.content{
+    padding:5% 10%;
+    text-align:justify
+}
+.logo-col{
+    color: #696969;
+}
+.logo-col:hover strong {
+    color: #2f2f2f;
+}
+.log_txt{
+    width: 60%;
+    left:0;
+    right:0;
+    margin: 0 auto;
     text-align: center;
-    border: 2px solid rgb(150, 147, 147);
-    border-radius: 10px;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 2rem 10rem;
+    color: #6d6d6d;
 }
 
-.log_container .log_txt{
-    width: 70%;
-    margin-top: 5px;
-    font-weight: bold;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;;
+footer .container{
+    color: silver;
+    width: 100%;
+}
+.fa{
+    color: #b8b8b8;
 
 }
-.log_container .log_btn{
-    width: 70%;
-    height: 25px;
-    font-weight:bold;
-    margin-top: 25px;
-    margin-bottom:  1em;
-    text-align: center;
-    padding: 0;
-}
-.log_container h1{
-    color: rgb(52, 199, 93);
-}
-.log_container h1 strong{
-color: rgb(27, 174, 230);
-}
-.ERROR_MSG{
-    color: red;
-}
-/*Styling na login pagina*/
-.inside{
-    background-color: red;
-}
-a{
-    color: white;
-}
-a:active{
-    color:white;
-}
-a:hover{
-    color:yellow;
+.fa:hover {
+    color: #7a7a7a;
+    transition: 1s;
+    -webkit-transition: 1s;
 }
