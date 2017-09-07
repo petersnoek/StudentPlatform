@@ -207,3 +207,26 @@ footer .container{
     transition: 1s;
     -webkit-transition: 1s;
 }
+section .hr1 {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+.p-5 .hr2 {
+    border-top: 6px double #8c8b8b;
+    text-align: center;
+}
+.p-5 .hr2:after {
+    content: '\002665';
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    background: rgb(79, 79, 81);
+    color: #8c8b8b;
+    font-size: 18px;
+
+}
+.p-5 .hr3 {
+    border-top: 6px double #8c8b8b;
+}

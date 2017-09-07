@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Over StudentPlaza</h2>
+                <hr class="hr1">
                 <p class="lead">Studentplaza is een studenten platform waar studenten & docenten met elkaar kunnen communiceren. Het platform is niet alleen bedoeld voor gezelligheid. Aan het platform komt ook het zorgteam aan vast. hierbij kunnen studenten om hulp vragen aan zorgbegeleiders.</p>
 
             </div>
@@ -14,6 +15,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Onze Features</h2>
+                <hr class="hr1">
                 <ul class="feature_list">
                     <li>Live chat</li>
 
@@ -45,6 +47,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2 class="text-center">Ons Doel</h2>
+                <hr class="hr1">
                 <p>ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.</p>
         </div>
     </div>
@@ -64,6 +67,7 @@
                 <div class="col-md-6 order-1">
                     <div class="p-5">
                         <h2>Dustin van Hal</h2>
+                        <hr class="hr3">
                         <p><?php dustin_bio();?></p>
                     </div>
                 </div>
@@ -79,6 +83,7 @@
                 <div class="col-md-6">
                     <div class="p-5">
                         <h2 class="display-4">Romy Bijkerk</h2>
+                        <hr class="hr2">
                         <p><?php echo romy_bio();?></p>
                     </div>
                 </div>
@@ -93,6 +98,7 @@
             <div class="col-md-6 order-1">
                 <div class="p-5">
                     <h2>Thomas van Gaalen</h2>
+                    <hr class="hr3">
                     <p><?php echo thomas_bio();?></p>
                 </div>
             </div>
