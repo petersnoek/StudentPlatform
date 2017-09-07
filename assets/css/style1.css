@@ -117,16 +117,29 @@
 }
 
 /** Content styling **/
-.logo-col{
-    color: rgb(88, 155, 59);
-}
-strong{
-    color:rgb(58, 84, 155);
-}
+
 .grijs{
     background-color: rgb(54, 54, 56);
-    color: silver
+    color: silver;
+    -webkit-box-shadow: inset -1px 20px 47px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px 20px 47px -16px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 20px 47px -16px rgba(0,0,0,0.75);
+
 }
+.licht_grijs{
+    background-color: rgb(79, 79, 81);
+    -webkit-box-shadow: -1px -11px 72px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -11px 72px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px -11px 72px 3px rgba(0,0,0,0.75);
 
-
+}
+.feature_list{
+    list-style: none;
+}
+.feature_list li{
+    font-weight: bold;
+}
+.feature_list dl{
+    margin-left: 1em;
+}
 

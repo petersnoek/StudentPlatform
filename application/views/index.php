@@ -13,30 +13,45 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Over StudentPlaza</h2>
-                <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                <ul>
-                    <li>Clickable nav links that smooth scroll to page sections</li>
-                    <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                    <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                    <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                <p class="lead">Studentplaza is een studenten platform waar studenten & docenten met elkaar kunnen communiceren. Het platform is niet alleen bedoeld voor gezelligheid. Aan het platform komt ook het zorgteam aan vast. hierbij kunnen studenten om hulp vragen aan zorgbegeleiders.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="licht_grijs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Onze Features</h2>
+                <ul class="feature_list">
+                    <li>Live chat</li>
+
+                    <dl> De Live chat is bedoeld om gezellig met elkaar te praten over allerlei onderwerpen. van school tot aan vrijetijd.</dl>
+
+                    <li>Forum</li>
+
+                    <dl>Het forum heeft meerdere doeleinde. Studenten kunnen hier plezier maken of serieuze dingen bespreken zoals schoolwerk of misschien persoonlijke dingen.</dl>
+
+                    <li>persoonlijk hulp verzoek</li>
+
+                    <dl> het persoonlijk hulp systeem is verbonden aan het zorgteam. hier kunnen studenten persoonlijke problemen bespreken met het zorgteam. mocht het zorgteam denken dat dit niet zeer ernstig is kan dit doorgekoppeld worden aan een student die open staat voor ondersteuning te bieden aan studenten met een persoonlijke situatie. (studenten onder elkaar zijn annoniem)</dl>
+
+                    <li>Feedback</li>
+
+                    <dl> het feedback feature is bedoeld om feedback te kunnen geven over de school/docenten. hierop kan niet worden gereageerd door studenten maar wel door docenten. studenten kunnen het alleen beoordelen met "mee eens" & "mee oneens".</dl>
+
+                    <li>Rooster</li>
+
+                    <dl>   het rooster komt ook op dit platform. studenten krijgen hier de mogelijkheid op te reageren. wat vinden studenten nou precies van de rooster?</dl>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section id="features" class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Services we offer</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
+<section id="contact" class="grijs">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
