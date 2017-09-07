@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-md-6 order-1">
                     <div class="p-5">
-                        <h2>Dustin</h2>
+                        <h2>Dustin van Hal</h2>
                         <p><?php dustin_bio();?></p>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="p-5">
-                        <h2 class="display-4">Romy</h2>
+                        <h2 class="display-4">Romy Bijkerk</h2>
                         <p><?php echo romy_bio();?></p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
             </div>
             <div class="col-md-6 order-1">
                 <div class="p-5">
-                    <h2>Thomas</h2>
+                    <h2>Thomas van Gaalen</h2>
                     <p><?php echo thomas_bio();?></p>
                 </div>
             </div>
