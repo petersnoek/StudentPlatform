@@ -26,7 +26,7 @@
                     <a class="nav-link js-scroll-trigger" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#ons_doel">Ons Doel</a>
                 </li>
             </ul>
         </div>

@@ -118,6 +118,10 @@
 
 /** Content styling **/
 
+section{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 .grijs{
     background-color: rgb(54, 54, 56);
     color: silver;

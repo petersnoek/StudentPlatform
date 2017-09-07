@@ -51,13 +51,12 @@
     </div>
 </section>
 
-<section id="contact" class="grijs">
+<section id="Ons_doel" class="grijs">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2>Contact us</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-            </div>
+                <h2 class="text-center">Ons Doel</h2>
+                <p>ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.</p>            </div>
         </div>
     </div>
 </section>
