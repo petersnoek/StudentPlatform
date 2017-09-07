@@ -1,13 +1,3 @@
-<body class="grijs "id="page-top">
-<div class="header">
-    <div class="sides"> <a href="login" class="logo">ga naar het project</a></div>
-    <div class="info">
-        <h1>Studentplaza</h1>
-        <div class="meta">
-            <p>Het socialmedia platform van MBO Gorinchem</p>
-        </div>
-    </div>
-</div>
 <section id="over" class="grijs">
     <div class="container">
         <div class="row">
@@ -19,7 +9,6 @@
         </div>
     </div>
 </section>
-
 <section id="features" class="licht_grijs">
     <div class="container">
         <div class="row">
@@ -56,7 +45,57 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2 class="text-center">Ons Doel</h2>
-                <p>ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.</p>            </div>
+                <p>ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.</p>
+        </div>
+    </div>
+</section>
+<section id="team" class="licht_grijs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center">Het Team</h2>
+              </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                    <div class="p-5">
+                        <a class="gitprof" href="https://github.com/dustdustinn" target="_blank"><img class="img-fluid rounded-circle" src="https://avatars0.githubusercontent.com/u/21998721?v=4&s=460" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1">
+                    <div class="p-5">
+                        <h2>Dustin</h2>
+                        <p><?php dustin_bio();?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 prof2" >
+                    <div class="p-5">
+                        <a class="gitprof" href="https://github.com/romy96" target="_blank"><img class="img-fluid rounded-circle" src="https://avatars0.githubusercontent.com/u/19590033?v=4&s=460" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5">
+                        <h2 class="display-4">Romy</h2>
+                        <p><?php echo romy_bio();?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2">
+                <div class="p-5">
+                    <a class="gitprof" href="https://github.com/Thommass" target="_blank"><img class="img-fluid rounded-circle" src="https://avatars0.githubusercontent.com/u/28269645?v=4&s=460" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1">
+                <div class="p-5">
+                    <h2>Thomas</h2>
+                    <p><?php echo thomas_bio();?></p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

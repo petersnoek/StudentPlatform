@@ -16,9 +16,20 @@ class index extends CI_Controller{
 
     public function index(){
 
+        function dustin_bio(){
+            echo "Student Applicatie ontwikkelaar,";
+        }
+        function romy_bio(){
+            echo "Studente Applicatie ontwikkelaar";
+        }
+        function thomas_bio(){
+            echo"student applicatie ontwikkelaar";
+        }
         $data['pageTitle'] = 'Your page title';
         $this->load->view('templates/header');
         $this->load->view('index');
         $this->load->view('templates/footer');
     }
+
+
 }

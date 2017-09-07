@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="grijs "id="page-top">
 
 < <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
@@ -26,9 +26,23 @@
                     <a class="nav-link js-scroll-trigger" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#ons_doel">Ons Doel</a>
+                    <a class="nav-link js-scroll-trigger" href="#Ons_doel">Ons Doel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#team">Het Team</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<div class="header">
+
+    <div class="info">
+        <h1>Studentplaza</h1>
+        <div class="meta">
+            <p>Het socialmedia platform van MBO Gorinchem<br>
+                <a href="login" class="logo">ga naar het project</a></p>
+        </div>
+    </div>
+</div>
