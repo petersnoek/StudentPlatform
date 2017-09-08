@@ -60,5 +60,5 @@ $route['register'] = 'register';
 $route['default_controller'] = 'index';
 $route['(:any)'] = 'pages/view/$1';
 
-$route['example'] = 'example';
+$route['forums/(:any)'] = 'forums/view/$1';
 

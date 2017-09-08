@@ -17,8 +17,11 @@ class inside extends CI_Controller{
     }
 
     public function index(){
+        $this->load->model('inside_model');
+        $data['forums'] = $this->inside_model->get_forums();
+
         $this->load->view('templates/header_inside');
-        $this->load->view('inside');
+        $this->load->view('inside', $data);
         $this->load->view('templates/footer_inside');
     }
 }

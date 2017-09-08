@@ -104,3 +104,13 @@ footer .container{
     transition: 1s;
     -webkit-transition: 1s;
 }
+
+table 
+{
+    border-collapse: collapse;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+}
