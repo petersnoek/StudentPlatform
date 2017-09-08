@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 
 <div class="forum">
+    <h1> forum  feature word later gestyled!</h1>
     <a href="<?php echo base_url();?>index.php/forums/create">Nieuwe forum</a>
 
     <?php foreach ($forums as $forum): ?>
