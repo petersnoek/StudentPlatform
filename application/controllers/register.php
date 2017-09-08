@@ -18,7 +18,7 @@ class register extends CI_Controller
 			$this->form_validation->set_rules('username', 'username', 'required');
 			$this->form_validation->set_rules('password', 'password', 'required|min_length[8]');
             $this->form_validation->set_rules('password2', 'password2', 'required|min_length[8]|matches[password]');
-			$this->form_validation->set_rules('email', 'email', 'required');
+			$this->form_validation->set_rules('email', 'email', 'required|valid_email');
 			$this->form_validation->set_rules('leerling_nr', 'leerling_nr', 'required');
 			$this->form_validation->set_rules('klas', 'klas', 'required');
 			$this->form_validation->set_rules('geslacht', 'geslacht', 'required');

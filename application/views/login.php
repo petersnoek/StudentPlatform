@@ -14,7 +14,7 @@
 
 < <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="" onclick="window.history.back();"><span class="logo-col"><strong>Student</strong>Plaza</span></a>
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>"><span class="logo-col"><strong>Student</strong>Plaza</span></a>
     </div>
 </nav>
 

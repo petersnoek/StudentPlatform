@@ -29,7 +29,14 @@ class Login_model extends CI_Model{
                 $this->session->set_flashdata('gelukt', 'je bent aangemeld');
 
                 $_SESSION['user_logged'] = TRUE;
+                $_SESSION['avatar'] = $user->avatar;
                 $_SESSION['username'] = $user->username;
+                $_SESSION['leerling_nr'] = $user->leerling_nr;
+                $_SESSION['email'] = $user->email;
+                $_SESSION['klas'] = $user->klas;
+                $_SESSION['geslacht'] = $user->geslacht;
+                $_SESSION['DOB']= $user->geboortedatum;
+
 
                 redirect('inside', 'refresh');
             }

@@ -6,5 +6,4 @@
  * Time: 11:58 AM
  */
 ?>
-<h1> username:<?php echo $_SESSION['username'];?></h1>
-<a href="<?php echo base_url();?>/index.php/logout">afmelden</a>
+
