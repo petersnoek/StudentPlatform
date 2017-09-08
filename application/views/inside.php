@@ -9,7 +9,7 @@
 <h1> username:<?php echo $_SESSION['username'];?></h1>
 <a href="<?php echo base_url();?>/index.php/logout">afmelden</a>
 
-<a href="<?php echo site_url();?>index.php/forums/create">Nieuwe forum</a>
+<a href="<?php echo base_url();?>index.php/forums/create">Nieuwe forum</a>
 
 <?php foreach ($forums as $forum): ?>
 		<table>

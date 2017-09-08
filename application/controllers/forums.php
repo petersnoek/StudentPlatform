@@ -11,7 +11,7 @@ class forums extends CI_Controller
 
     public function view($id = NULL)
     {
-    	 $this->load->model('forums_model');
+    	$this->load->model('forums_model');
     	$data['forum'] = $this->forums_model->get_forum($id);
 
 		if (empty($data['forum']))
@@ -20,8 +20,43 @@ class forums extends CI_Controller
 		    redirect('inside', 'Refresh');
 		}
 
-		$this->load->view('templates/header', $data);
-		$this->load->view('forums/view', $data);
-		$this->load->view('templates/footer');
+		$this->load->helper('form');
+		$this->load->library('form_validation');
+
+		$this->form_validation->set_rules('username', 'creator');
+		$this->form_validation->set_rules('Date_time', 'create_date_time');
+		$this->form_validation->set_rules('comment', 'description');
+
+		if ($this->form_validation->run() === FALSE)
+		{
+			$this->load->view('templates/header_inside', $data);
+			$this->load->view('forums/view', $data);
+			$this->load->view('templates/footer_inside');
+		}
+    }
+
+    public function create()
+    {
+    	$this->load->helper('form');
+		$this->load->library('form_validation');
+
+		$this->form_validation->set_rules('title', 'title', 'required');
+		$this->form_validation->set_rules('description', 'description', 'required');
+		$this->form_validation->set_rules('creator', 'creator', 'required');
+		$this->form_validation->set_rules('date_time', 'create_date_time', 'required');
+		
+
+		if ($this->form_validation->run() === FALSE)
+		{
+			$this->load->view('templates/header_inside');
+			$this->load->view('forums/create');
+			$this->load->view('templates/footer_inside');
+		}
+		else
+		{
+			$this->load->model('forums_model');
+		    $this->forums_model->create_forum();
+		    redirect('inside', 'refresh');
+		}
     }
 }

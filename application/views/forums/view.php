@@ -8,11 +8,12 @@
 
 <?php endif; ?>
 
-	<form method="post" action="#post_comment">
+	<?php echo form_open('forums/view'); ?>
 		<label for="username">Gebruiker</label>
-		<input name="username" type="text" value="" />
+		<input name="username" type="text" value="<?php echo $_SESSION['username'];?>" readonly />
 		<label for="Date_time">Datum en tijd</label>
 		<input name="Date_time" type="datetime" value="" />
 		<label for="comment">Commentaar</label>
 		<textarea name="comment" type="text" rows="5"></textarea>
+		<input type="submit" name="submit" value="Plaats reactie" />
 	</form>
