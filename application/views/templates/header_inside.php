@@ -27,7 +27,7 @@
         <li><a href="#">Zorg <span class="icon"></span></a></a></li>
         <li><a href="#">Roosters <span class="icon"></span></a></li>
         <li><a href="#">Feedback  <span class="icon"></span></a></li>
-        <li><span href="<?php echo base_url();?>logout">Afmelden <span class="icon"></span></span></a></li>
+        <li><a href="<?php echo base_url();?>logout">Afmelden <span class="icon"></span></a></li>
     </ul>
 </nav>
 

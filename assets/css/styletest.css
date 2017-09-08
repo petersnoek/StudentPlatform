@@ -215,3 +215,6 @@ body.nav-expanded {
     transition: all 1s ease-in;
     border: 3px solid #35f17c;
 }
+.forum{
+    margin-top: 50px;
+}
