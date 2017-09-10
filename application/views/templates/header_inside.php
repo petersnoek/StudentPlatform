@@ -34,7 +34,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 
     <!--Include your brand here-->
-    <a class="navbar-brand" href="#">StudentPlaza</a>
+    <a class="navbar-brand" href="<?php echo base_url();?>inside">StudentPlaza</a>
     <div class="navbar-header pull-right">
         <a id="nav-expander" class="nav-expander fixed">
             MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>

@@ -10,12 +10,12 @@
 
 <div class="forum">
     <h1> forum  feature word later gestyled!</h1>
-    <a href="<?php echo base_url();?>index.php/forums/create">Nieuwe forum</a>
+    <a href="<?php echo base_url();?>index.php/forums/create">maak niew topic</a>
 
     <?php foreach ($forums as $forum): ?>
             <table>
                 <tr>
-                    <th>Forum</th>
+                    <th>topic</th>
                     <th>Maker</th>
                     <th>Reacties</th>
                 </tr>
