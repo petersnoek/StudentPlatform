@@ -19,13 +19,19 @@
         <div class="card-info"> <span class="card-title"><?php echo $_SESSION['username'];?></span></div>
     </div>
     <div>
+
+        <p>Rank: <?php echo $user['role_id'];?></p>
+        <p>Motto: <?php echo $user['motto'];?></p>
+        <p>Hobbies: <?php echo $user['hobby'];?></p>
+        <p>Geslacht: <?php echo $user['geslacht'];?></p>
+        <p>Klas: <?php echo $user['klas'];?></p>
+        <p>Geboortedatum: <?php echo $user['geboortedatum'];?></p>
+        <br>
         <p> Account gegevens:</p>
-        <p>Uw Leerling nummer:  <?php echo $_SESSION['leerling_nr'];?></p>
-        <p>Uw E-mail addres: <?php echo $_SESSION['email'];?></p>
-        <p><?php echo $_SESSION['avatar'];?></p>
-        <p>Geslacht: <?php echo $_SESSION['geslacht'];?></p>
-        <p>Klas: <?php echo $_SESSION['klas'];?></p>
-        <p>Geboortedatum: <?php echo $_SESSION['DOB'];?></p>
+        <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>
+        <p>Uw Leerling nummer:  <?php echo $user['leerling_nr'];?></p>
+        <p>Uw E-mail addres: <?php echo $user['email'];?></p>
+
     </div>
     <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
         <div class="btn-group" role="group">

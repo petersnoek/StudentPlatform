@@ -15,8 +15,11 @@ class user extends CI_Controller{
         $this->load->database();
     }
     public function Mijn_profiel(){
+        $this->load->model('user_model');
+        $data['user']=$this->user_model->recieve();
+
         $this->load->view('templates/header_inside');
-        $this->load->view('users/Mijn_Profiel');
+        $this->load->view('users/Mijn_Profiel', $data);
         $this->load->view('templates/footer_inside');
     }
     public function  wijzig(){

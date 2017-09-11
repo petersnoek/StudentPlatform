@@ -50,6 +50,14 @@
     <label for="geboortedatum">geboorte datum:</label>
     <input type="date" name="geboortedatum" /><br />
 
+    <label for="functie">Functie:</label>
+<select id="functie" name="functie">
+    <option value="1">Student</option>
+    <option value="2">Docent</option>
+    <option value="3">Zorgbegeleider</option>
+    <option value="4">Admin</option>
+</select>
+
     <input type="submit" name="submit" value="Registreer" />
 
 </form>

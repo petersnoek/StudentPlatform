@@ -28,4 +28,8 @@
 
     <?php endforeach; ?>
 </div>
+<<<<<<< 902364e8597791bc806dc2b0c5bba590e5b89d21
 
+=======
+>>>>>>> 78f774ff93f411f596c5d30517cf9606113fd42e
+>>>>>>> user is able to edit profile properties now

@@ -28,7 +28,17 @@ class user_model extends CI_Model{
 
     }
     public function send(){
-        $value=array('geslacht'=>$geslacht,'klas'=>$klas,'title'=>$DOB);
+        $id= $this->input->post('user_id');
+        $data = array(
+            'motto' => $this->input->post('motto'),
+            'hobby' => $this->input->post('hobby'),
+            'geboortedatum' => $this->input->post('DOB'),
+            'geslacht' => $this->input->post('geslacht'),
+            'klas'  => $this->input->post('klas')
+        );
+
+        $this->db->where('user_id', $id);
+        $this->db->update('users', $data);
     }
 
 

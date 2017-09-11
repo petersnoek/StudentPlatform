@@ -16,7 +16,8 @@ class register_model extends CI_Model
             'leerling_nr' => $_POST['leerling_nr'],
             'klas' => $_POST['klas'],
             'geslacht' => $_POST['geslacht'],
-            'geboortedatum' => $_POST['geboortedatum']
+            'geboortedatum' => $_POST['geboortedatum'],
+            'role_id' => $_POST['functie']
 
         );
         $this->db->insert('users', $data);

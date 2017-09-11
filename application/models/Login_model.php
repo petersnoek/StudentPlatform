@@ -19,6 +19,7 @@ class Login_model extends CI_Model{
         $this->db->select('*');
         $this->db->from('users');
         $this->db->where(array('username'=>$username, 'password'=>$password));
+        $this->db->join('roles', 'users.role_id = roles.role_id');
         $query = $this->db->get();
 
         if($query->num_rows() > 0) {
@@ -36,7 +37,9 @@ class Login_model extends CI_Model{
                 $_SESSION['klas'] = $user->klas;
                 $_SESSION['geslacht'] = $user->geslacht;
                 $_SESSION['DOB']= $user->geboortedatum;
-
+                $_SESSION['motto']=$user->motto;
+                $_SESSION['hobby']=$user->hobby;
+                $_SESSION['role']=$user->role_id;
 
                 redirect('inside', 'refresh');
             }
