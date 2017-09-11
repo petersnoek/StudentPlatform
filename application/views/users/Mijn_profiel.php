@@ -23,9 +23,9 @@
         <p>Uw Leerling nummer:  <?php echo $_SESSION['leerling_nr'];?></p>
         <p>Uw E-mail addres: <?php echo $_SESSION['email'];?></p>
         <p><?php echo $_SESSION['avatar'];?></p>
-        <p>U bent een <?php echo $_SESSION['geslacht'];?></p>
-        <p>Uw klas: <?php echo $_SESSION['klas'];?></p>
-        <p>Uw geboortedatum: <?php echo $_SESSION['DOB'];?></p>
+        <p>Geslacht: <?php echo $_SESSION['geslacht'];?></p>
+        <p>Klas: <?php echo $_SESSION['klas'];?></p>
+        <p>Geboortedatum: <?php echo $_SESSION['DOB'];?></p>
     </div>
     <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
         <div class="btn-group" role="group">
