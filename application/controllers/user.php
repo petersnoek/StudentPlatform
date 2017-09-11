@@ -45,7 +45,7 @@ class user extends CI_Controller{
             $this->user_model->up_avatar();
 
             if (move_uploaded_file($_FILES['avatar']['tmp_name'], $target)){
-                $msg= "avatar is succesvol geupload!";
+                redirect("user/mijn_profiel", "refresh");
             }
             else{
                 $msg = "er is een fout ontstaan tijdens het uploaden van uw avatar";
