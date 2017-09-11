@@ -32,7 +32,25 @@ class user extends CI_Controller{
 
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $this->user_model->send();
+            redirect("user/mijn_profiel", "refresh");
+        }
+
     }
 
-}
+   public function  upload_avatar(){
+        if(isset($_POST['upload'])){
+            //locatie voor opslaan van avatar
+            $target= $_SERVER['DOCUMENT_ROOT'] ."/studentplaza/assets/img/avatars/".basename($_FILES['avatar']['name']);
+            $this->load->model('user_model');
+            $this->user_model->up_avatar();
+
+            if (move_uploaded_file($_FILES['avatar']['tmp_name'], $target)){
+                $msg= "avatar is succesvol geupload!";
+            }
+            else{
+                $msg = "er is een fout ontstaan tijdens het uploaden van uw avatar";
+            }
+        }
+
+   }
 }

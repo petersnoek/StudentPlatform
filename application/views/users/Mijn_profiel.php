@@ -11,10 +11,10 @@
 <div class="col-lg-12 col-sm-12">
     <div class="card hovercard">
         <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://lorempixel.com/output/people-q-g-64-64-6.jpg">
+            <img class="card-bkimg" alt="" src="<?php echo base_url();?>assets/img/avatars/<?php echo $user['avatar'];?>">
         </div>
         <div class="useravatar">
-            <img alt="" src="http://lorempixel.com/output/people-q-g-64-64-6.jpg">
+            <img alt="" src="<?php echo base_url();?>assets/img/avatars/<?php echo $user['avatar'];?>">
         </div>
         <div class="card-info"> <span class="card-title"><?php echo $_SESSION['username'];?></span></div>
     </div>
@@ -26,6 +26,7 @@
         <p>Geslacht: <?php echo $user['geslacht'];?></p>
         <p>Klas: <?php echo $user['klas'];?></p>
         <p>Geboortedatum: <?php echo $user['geboortedatum'];?></p>
+        <a href="wijzig">Wijzig profiel hier</a>
         <br>
         <p> Account gegevens:</p>
         <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>

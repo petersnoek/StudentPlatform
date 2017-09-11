@@ -17,7 +17,7 @@
         <li class="text-right"><a href="#" id="nav-close">X</a></li>
         <li><a class="logo" href="<?php echo base_url();?>user/Mijn_profiel">
             <div class="logo text-center">
-                <img src="http://lorempixel.com/output/people-q-g-64-64-6.jpg" class="img-responsive center-block" alt="Logo">
+                <img src="<?php echo base_url();?>assets/img/avatars/<?php echo $_SESSION['avatar'];?>" class="img-responsive center-block" alt="Logo">
                 <?php echo $_SESSION['username'];?>
             </div>
             </a>

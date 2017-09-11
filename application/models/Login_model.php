@@ -19,7 +19,7 @@ class Login_model extends CI_Model{
         $this->db->select('*');
         $this->db->from('users');
         $this->db->where(array('username'=>$username, 'password'=>$password));
-        $this->db->join('roles', 'users.role_id = roles.role_id');
+     /**   $this->db->join('roles', 'users.role_id = roles.role_id'); **/
         $query = $this->db->get();
 
         if($query->num_rows() > 0) {

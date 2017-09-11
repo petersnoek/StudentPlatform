@@ -40,6 +40,11 @@ class user_model extends CI_Model{
         $this->db->where('user_id', $id);
         $this->db->update('users', $data);
     }
-
+    public  function up_avatar(){
+        $avatar = $_FILES['avatar']['name'];
+        $id= $this->input->post('user_id');
+        $this->db->where('user_id', $id);
+        $this->db->update('users', array('avatar' => $avatar));
+    }
 
 }
