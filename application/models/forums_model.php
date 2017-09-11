@@ -33,7 +33,7 @@ class forums_model extends CI_Model{
         $this->load->helper('url'); 
 
         $data = array(
-          'forum_id' => $this->input->post('id'),
+          'forum_id' => $this->input->post('forum_id'),
           'username' => $this->input->post('username'),
           'date_time_reaction' => $this->input->post('date_time_reaction'),
           'description' => $this->input->post('description')

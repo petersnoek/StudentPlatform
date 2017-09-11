@@ -11,6 +11,8 @@ class forums extends CI_Controller
 
     public function view($id = NULL, $forum_id = NULL)
     {
+    	$this->session->set_flashdata('ERROR', 'entering function view()');
+
     	$this->load->model('forums_model');
     	$data['forum'] = $this->forums_model->get_forum($id);
 
@@ -30,18 +32,20 @@ class forums extends CI_Controller
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_rules('username', 'username');
-		$this->form_validation->set_rules('date_time_reaction', 'date_time_reaction');
+		//$this->form_validation->set_rules('username', 'username');
+		//$this->form_validation->set_rules('date_time_reaction', 'date_time_reaction');
 		$this->form_validation->set_rules('description', 'description');
 
 		if ($this->form_validation->run() === FALSE)
 		{
+			//die('validation failed');
 			$this->load->view('templates/header_inside', $data);
 			$this->load->view('forums/view', $data, $data2);
 			$this->load->view('templates/footer_inside');
 		}
 		else
 		{
+			//die('validation ok');
 			$this->forums_model->create_comment();
 			redirect('view', 'refresh');
 		}

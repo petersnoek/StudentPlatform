@@ -15,7 +15,10 @@
 	<?php endforeach; ?>
 <?php endif; ?>
 
-	<?php echo form_open('forums/view'); ?>
+	<?php echo form_open('forums/view/'. (isset($forum) ? $forum["id"] : "") ) ?>
+
+		<?php echo validation_errors(); ?>
+
 		<label for="username">Gebruiker</label>
 		<?php if (isset($forum)): ?>
 			<input type="hidden" name="forum_id" value="<?php echo $forum['id'] ?>"/> 

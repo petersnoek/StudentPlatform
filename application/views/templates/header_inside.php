@@ -9,6 +9,7 @@
     <!--Inspiration from: https://dribbble.com/shots/1428271-iOS7-Challenge-App-->
 </head>
 <body>
+
 <nav>
     <ul class="list-unstyled main-menu">
 
@@ -42,4 +43,11 @@
     </div>
 </div>
 <script src="/studentplaza/assets/js/inside-menu.js"></script>
-    <?= $this->session->flashdata('ERROR');?>
+
+<div class="container" style="margin-top: 100px;">
+    <div class="clearfix"></div>
+    <div class="row">
+        <?= $this->session->flashdata('ERROR');?>
+    </div>
+
+    <div class="row">
