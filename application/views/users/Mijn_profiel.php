@@ -19,7 +19,7 @@
         <div class="card-info"> <span class="card-title"><?php echo $_SESSION['username'];?></span></div>
     </div>
     <div>
-
+        <p> Profiel gegevens:</p>
         <p>Rank: <?php echo $user['role_id'];?></p>
         <p>Motto: <?php echo $user['motto'];?></p>
         <p>Hobbies: <?php echo $user['hobby'];?></p>
@@ -27,6 +27,7 @@
         <p>Klas: <?php echo $user['klas'];?></p>
         <p>Geboortedatum: <?php echo $user['geboortedatum'];?></p>
         <a href="wijzig">Wijzig profiel hier</a>
+        <br></nt>
         <br>
         <p> Account gegevens:</p>
         <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>

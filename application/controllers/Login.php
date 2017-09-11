@@ -13,22 +13,24 @@ class login extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url_helper');
+        $this->load->helper('form');
+        $this->load->library('form_validation');
     }
 
     public function index()
     {
-        $this->load->helper('form');
-        $this->load->library('form_validation');
 
         $data['title'] = 'Aanmelden';
-
+/** controlleerd als username en password velden zijn gevuld */
         $this->form_validation->set_rules('username', 'gebruikersnaam', 'required');
         $this->form_validation->set_rules('password', 'wachtwoord', 'required');
 
-
+/** als  1 of beide velden leeg is  geef fout melden voor legen velden */
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('login', $data);
-        } else {
+        }
+        /** a;s beide velden gevuld zijn roep model functie check_user() aam */
+        else {
             $this->load->model('login_model');
             $this->login_model->check_user();
         }

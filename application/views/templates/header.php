@@ -4,14 +4,18 @@
     <title><?php echo (isset($pageTitle)) ? $pageTitle : 'StudentPlaza'; ?> </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--inladen van bootstrap en fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- inladen van eigen css -->
     <link rel="stylesheet" type="text/css" href="/studentplaza/assets/css/style1.css"/>
+    <!--inladen van jquery base -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- inladen van bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body class="grijs "id="page-top">
-
+<!--start nav bar-->
 < <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="logo-col"><strong>Student</strong>Plaza</span></a>
@@ -35,8 +39,8 @@
             </ul>
         </div>
     </div>
-</nav>
-
+</nav><!-- einde navbar -->
+<!--start header-->
 <div class="header">
 
     <div class="info">

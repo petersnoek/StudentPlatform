@@ -15,7 +15,7 @@ class index extends CI_Controller{
 
 
     public function index(){
-
+        /** functions voor het vullen van "ons team" */
         function dustin_bio(){
             echo "Student Applicatie ontwikkelaar <br>@ Da Vinci college.<br><br> <strong>Programmeertalen:</strong><br> HTML, CSS, PHP, SQL, JAVASCRIPT, JAVA <br><br> <strong>Droom:</strong><br>Een succesvol leven hebben samen met zijn vriendin.";
         }
@@ -25,7 +25,7 @@ class index extends CI_Controller{
         function thomas_bio(){
             echo"Student Applicatie ontwikkelaar <br>@ Da Vinci college.<br><br>";
         }
-        $data['pageTitle'] = 'Your page title';
+        /** view pages word geladen */
         $this->load->view('templates/header');
         $this->load->view('index');
         $this->load->view('templates/footer');

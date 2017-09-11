@@ -1,3 +1,5 @@
+<!--einde Header -->
+<!-- start Over Studentplaza section -->
 <section id="over" class="grijs">
     <div class="container">
         <div class="row">
@@ -9,7 +11,8 @@
             </div>
         </div>
     </div>
-</section>
+</section>  <!--einde van over studentplaza section -->
+<!-- start Onze Features section-->
 <section id="features" class="licht_grijs">
     <div class="container">
         <div class="row">
@@ -40,8 +43,8 @@
             </div>
         </div>
     </div>
-</section>
-
+</section><!-- einde onze features section -->
+<!-- start ons doel section -->
 <section id="Ons_doel" class="grijs">
     <div class="container">
         <div class="row">
@@ -51,7 +54,8 @@
                 <p>ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.</p>
         </div>
     </div>
-</section>
+</section><!-- einde ons doel section -->
+<!-- start ons team section -->
 <section id="team" class="licht_grijs">
     <div class="container">
         <div class="row">
@@ -104,4 +108,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> <!--einde ons team section-->
+<!-- start van footer -->

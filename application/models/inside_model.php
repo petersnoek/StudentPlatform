@@ -10,6 +10,7 @@ class inside_model extends CI_Model{
 
     public function get_forums()
     {
+        /** @var query haalt alles uit table forums */
     	$query = $this->db->get('forums');
     	return $query->result_array();
     }

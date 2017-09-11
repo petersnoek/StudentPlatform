@@ -10,7 +10,7 @@
         </div>
     </div>
 
-</footer>
+</footer><!-- einde footer-->
 <!-- Bootstrap core JavaScript -->
 <script src="/studentplaza/assets/vendor/jquery/jquery.min.js"></script>
 <script src="/studentplaza/assets/vendor/popper/popper.min.js"></script>
