@@ -6,7 +6,7 @@
  * Time: 11:58 AM
  */
 ?>
-<<<<<<< HEAD
+
 
 <div class="forum">
     <h1> forum  feature word later gestyled!</h1>
@@ -28,4 +28,4 @@
 
     <?php endforeach; ?>
 </div>
->>>>>>> 78f774ff93f411f596c5d30517cf9606113fd42e
+

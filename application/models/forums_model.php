@@ -27,4 +27,28 @@ class forums_model extends CI_Model{
 
         return $this->db->insert('forums', $data);
     }
+
+    public function create_comment()
+    {
+        $this->load->helper('url'); 
+
+        $data = array(
+          'forum_id' => $this->input->post('id'),
+          'username' => $this->input->post('username'),
+          'date_time_reaction' => $this->input->post('date_time_reaction'),
+          'description' => $this->input->post('description')
+        );
+
+        return $this->db->insert('forum_reactions', $data);
+    }
+
+    public function get_comments_from_forum($forum_id = '')
+    {
+      $this->db->select('*');
+      $this->db->from('forum_reactions');
+      $this->db->join('forums', 'forums.id = forum_reactions.forum_id', 'left');
+      $this->db->where('forums.id', $forum_id);
+      $query = $this->db->get();
+      return $query->result_array();
+    }
 }
