@@ -44,10 +44,5 @@
 </div>
 <script src="/studentplaza/assets/js/inside-menu.js"></script>
 
-<div class="container" style="margin-top: 100px;">
-    <div class="clearfix"></div>
-    <div class="row">
-        <?= $this->session->flashdata('ERROR');?>
-    </div>
 
-    <div class="row">
+        <?= $this->session->flashdata('ERROR');?>

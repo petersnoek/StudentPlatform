@@ -39,5 +39,6 @@
     </div>
     <div>
         <label></label>
-        <input action="" type="submit" value="Wijzig mijn gegevens!">
+        <input type="submit" value="Wijzig mijn gegevens!">
     </div>
+</form>
