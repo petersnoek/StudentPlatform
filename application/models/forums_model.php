@@ -42,13 +42,9 @@ class forums_model extends CI_Model{
         return $this->db->insert('forum_reactions', $data);
     }
 
-    public function get_comments_from_forum($forum_id = '')
+    public function get_comments_from_forum($id = '')
     {
-      $this->db->select('*');
-      $this->db->from('forum_reactions');
-      $this->db->join('forums', 'forums.id = forum_reactions.forum_id', 'left');
-      $this->db->where('forums.id', $forum_id);
-      $query = $this->db->get();
-      return $query->result_array();
+        $query = $this->db->get_where('forum_reactions', array('forum_id' => $id));
+        return $query->result_array();
     }
 }
