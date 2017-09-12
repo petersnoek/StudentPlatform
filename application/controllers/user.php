@@ -44,20 +44,37 @@ class user extends CI_Controller{
    public function  upload_avatar(){
         /** a;s kopje upload word ingevoerd word onderstaande code uitgevoert */
         if(isset($_POST['upload'])){
-            //locatie voor opslaan van avatar
-            $target= $_SERVER['DOCUMENT_ROOT'] ."/studentplaza/assets/img/avatars/".basename($_FILES['avatar']['name']);
-            $this->load->model('user_model');
-            /** functie up_avatar binnen  user_model word uitgevoert */
-            $this->user_model->up_avatar();
-            /** waneer foto word verstuurd naar $target stuur terug naar mijn_profiel */
-            if (move_uploaded_file($_FILES['avatar']['tmp_name'], $target)){
-                redirect("user/mijn_profiel", "refresh");
+            $user_id = $_POST['user_id'];
+
+            if (($_FILES["avatar"]["type"] == "image/gif")
+                || ($_FILES["avatar"]["type"] == "image/jpeg")
+                || ($_FILES["avatar"]["type"] == "image/jpg")
+                   ($_FILES["avatar"]["type"] == "image/gif")
+                || ($_FILES["avatar"]["type"] == "image/png")) {
+
+                    $filename  = basename($_FILES['avatar']['name']);
+                    $extension = pathinfo($filename, PATHINFO_EXTENSION);
+                    $new       = 'avatar_'.$user_id.'.png';
+                    //locatie voor opslaan van avatar
+                    $target= $_SERVER['DOCUMENT_ROOT'] ."/studentplaza/assets/img/avatars/";
+                    $this->load->model('user_model');
+                    /** functie up_avatar binnen  user_model word uitgevoert */
+                    $this->user_model->up_avatar($new);
+                    /** waneer foto word verstuurd naar $target stuur terug naar mijn_profiel */
+                    if (move_uploaded_file($_FILES['avatar']['tmp_name'], $target."/{$new}")){
+                        redirect("user/mijn_profiel", "refresh");
+                    }
+                    /** wanneer dit niet lukt geef error     */
+                    else{
+                        $msg = "er is een fout ontstaan tijdens het uploaden van uw avatar";
+                    }
             }
-            /** wanneer dit niet lukt geef error  */
             else{
-                $msg = "er is een fout ontstaan tijdens het uploaden van uw avatar";
+                $this->session->set_flashdata("ERRORava", "bestand moet fotobestand zijn!");
+                redirect('user/wijzig', 'refresh');
             }
         }
 
    }
 }
+

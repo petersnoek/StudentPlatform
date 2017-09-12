@@ -12,6 +12,7 @@
 <p> Registreer hier uw account. </p>
 
 <?php
+/** als session gelukt is gevuld echo session */
     if(isset($_SESSION['gelukt'])) {
 
 ?>
@@ -19,10 +20,12 @@
 <?php
     }
 ?>
-<?php echo validation_errors(); ?>
+<?php
+/** echo errors van validation in register controller */
+echo validation_errors(); ?>
 
 <?php echo form_open('register'); ?>
-
+<!-- Start van register form -->
     <label for="username">gebruikersnaam:</label>
     <input name="username" type="text"/><br />
 

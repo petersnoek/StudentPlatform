@@ -11,11 +11,20 @@
 
     <?php echo (isset($_SESSION['query']) ? $_SESSION['query'] : ""); ?>
     <form action="upload_avatar" method="post" enctype="multipart/form-data">
+        <?php
+        if(isset($_SESSION['ERRORava'])) {
+
+            ?>
+            <!-- als session error is gevuld weergeef error -->
+            <p><?php echo $_SESSION['ERRORava']; ?></p>
+            <?php
+        }
+        ?>
         <input type="hidden" name="size" value="1000000">
             <div>
                 <input type="hidden" name="user_id" value="<?=$user['user_id']?>">
                 <label for="avatar">Avatar:</label>
-                <input type="file" name="avatar">
+                <input type="file" accept="image/*" name="avatar">
             </div>
             <div>
                 <input type="submit" name="upload" value="Upload avatar">

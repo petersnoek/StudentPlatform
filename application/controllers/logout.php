@@ -10,6 +10,7 @@ class logout extends CI_Controller{
         parent::__construct();
     }
     public function index(){
+        /** logout.php zorgt alleen dat session gegevens vergeten worden zodat gebruiker niet meer actief staat. gebruiker moet opnieuw inloggen als hij/zij inside wilt benaderen */
         session_destroy();
         redirect('login');
     }
