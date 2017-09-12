@@ -8,10 +8,10 @@
 <?php endif; ?>
 
 <?php if (isset($comments)): ?>
-	<?php foreach ($comments as $comment): ?>
-		<h3><?php echo $comment['username'] ?></h3>
-		<p><?php echo $comment['date_time_reaction'] ?></p>
-		<p><?php echo $comment['description'] ?></p>
+	<?php foreach ($comments as $row): ?>
+		<h3><?php echo $row['username'] ?></h3>
+		<p><?php echo $row['date_time_reaction'] ?></p>
+		<p><?php echo $row['description'] ?></p>
 	<?php endforeach; ?>
 <?php endif; ?>
 
@@ -25,7 +25,7 @@
 		<?php endif; ?>	
 		<input name="username" type="text" value="<?php echo $_SESSION['username'];?>" readonly />
 		<label for="date_time_reaction">Datum en tijd</label>
-		<input name="date_time_reaction" type="datetime" value="<?php echo date('m/d/y');?>" readonly/>
+		<input name="date_time_reaction" type="datetime" value="<?php echo date('m/d/y H:i:s');?>" readonly/>
 		<label for="description">Commentaar</label>
 		<textarea name="description" type="text" rows="5"></textarea>
 		<input type="submit" name="submit" value="Plaats reactie" />

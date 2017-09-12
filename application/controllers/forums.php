@@ -9,9 +9,9 @@ class forums extends CI_Controller
         $this->load->helper('url_helper');
     }
 
-    public function view($id = NULL, $forum_id = NULL)
+    public function view($id = NULL)
     {
-    	$this->session->set_flashdata('ERROR', 'entering function view()');
+    	//$this->session->set_flashdata('ERROR', 'entering function view()');
 
     	$this->load->model('forums_model');
     	$data['forum'] = $this->forums_model->get_forum($id);
@@ -22,9 +22,9 @@ class forums extends CI_Controller
 		    redirect('inside', 'Refresh');
 		}
 
-		$data2['comments'] = $this->forums_model->get_comments_from_forum($forum_id);
+		$data['comments'] = $this->forums_model->get_comments_from_forum($id);
 
-		if(empty($data2['comments']))
+		if(empty($data['comments']))
 		{
 			$this->session->set_flashdata('ERROR', 'Er zijn geen reacties gevonden!');
 		}
@@ -32,15 +32,13 @@ class forums extends CI_Controller
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
-		//$this->form_validation->set_rules('username', 'username');
-		//$this->form_validation->set_rules('date_time_reaction', 'date_time_reaction');
 		$this->form_validation->set_rules('description', 'description');
 
 		if ($this->form_validation->run() === FALSE)
 		{
 			//die('validation failed');
 			$this->load->view('templates/header_inside', $data);
-			$this->load->view('forums/view', $data, $data2);
+			$this->load->view('forums/view', $data);
 			$this->load->view('templates/footer_inside');
 		}
 		else
