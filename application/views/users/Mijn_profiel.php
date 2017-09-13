@@ -19,37 +19,44 @@
         <div class="card-info"> <span class="card-title"><?php echo $_SESSION['username'];?></span></div>
     </div>
     <div>
-        <p> Profiel gegevens:</p>
-        <p>Rank: <?php echo $user['role_id'];?></p>
-        <p>Motto: <?php echo $user['motto'];?></p>
-        <p>Hobbies: <?php echo $user['hobby'];?></p>
-        <p>Geslacht: <?php echo $user['geslacht'];?></p>
-        <p>Klas: <?php echo $user['klas'];?></p>
-        <p>Geboortedatum: <?php echo $user['geboortedatum'];?></p>
-        <a href="wijzig">Wijzig profiel hier</a>
-        <br></nt>
-        <br>
-        <p> Account gegevens:</p>
-        <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>
-        <p>Uw Leerling nummer:  <?php echo $user['leerling_nr'];?></p>
-        <p>Uw E-mail addres: <?php echo $user['email'];?></p>
+        <div class="panel panel-default">
+            <div class="panel-heading">Mijn Profiel</div>
+            <div class="panel-body">
+                <table class="table">
+                <tr>
+                    <th>Profiel:</th>
+                    <th>School:</th>
+                </tr>
+                <tr>
+                    <td>Rank: <?php echo $user['role_id'];?></td>
+                    <td>Klas: <?php echo $user['klas'];?></td>
+                </tr>
+                <tr>
+                    <td>Motto: <?php echo $user['motto'];?></td>
+                    <td>Leerling nummer:  <?php echo $user['leerling_nr'];?></td>
+                </tr>
+                <tr>
+                    <td>Hobbies: <?php echo $user['hobby'];?></td>
+                </tr>
+                <tr>
+                    <td>Geslacht: <?php echo $user['geslacht'];?></td>
+                </tr>
+                <tr>
+                    <td>Geboortedatum: <?php echo $user['geboortedatum'];?></td>
+                </tr>
+                </table>
 
-    </div>
-    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
-        <div class="btn-group" role="group">
-            <button type="button" id="stars" class="btn btn-default" href="#tab1" data-toggle="tab"><span class="fa fa-cube" aria-hidden="true"></span>
-                <div class="hidden-xs">vrienden</div>
-            </button>
-        </div>
-        <div class="btn-group" role="group">
-            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                <div class="hidden-xs">Biografie</div>
-            </button>
-        </div>
-        <div class="btn-group" role="group">
-            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="fa fa-list-alt" aria-hidden="true"></span>
-                <div class="hidden-xs">Forum posts</div>
-            </button>
+
+
+
+
+
+                <a href="wijzig">Wijzig profiel hier</a>
+            </div>
         </div>
     </div>
+    <p> Account gegevens:</p>
+    <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>
+    <p>Uw Leerling nummer:  <?php echo $user['leerling_nr'];?></p>
+    <p>Uw E-mail addres: <?php echo $user['email'];?></p>
 </div>

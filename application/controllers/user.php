@@ -49,7 +49,6 @@ class user extends CI_Controller{
             if (($_FILES["avatar"]["type"] == "image/gif")
                 || ($_FILES["avatar"]["type"] == "image/jpeg")
                 || ($_FILES["avatar"]["type"] == "image/jpg")
-                   ($_FILES["avatar"]["type"] == "image/gif")
                 || ($_FILES["avatar"]["type"] == "image/png")) {
 
                     $filename  = basename($_FILES['avatar']['name']);

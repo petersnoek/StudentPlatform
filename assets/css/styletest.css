@@ -329,3 +329,13 @@ body.nav-expanded {
 .container2{
     margin-top: 100px;
 }
+.panel-body{
+    padding: 0;
+}
+.panel table strong{
+width: 50px;
+}
+.panel-body .table td{
+    border-top: red 0px solid;
+    width: 5rem;
+}
