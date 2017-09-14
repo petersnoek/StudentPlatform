@@ -520,7 +520,7 @@ div.comment-form
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
     transform: translateZ(0);
-    background:#1B2030 url(https://cdlnws.a.ssl.fastly.net/image/upload/f_auto,q_auto/v1494865224/Blog/college_students.jpg) top center no-repeat;
+    background:#1B2030 url(http://hdwpro.com/wp-content/uploads/2016/03/Beautiful-Green-Field.jpeg) top center no-repeat;
     background-size:cover;
     background-attachment:fixed;
     animation: grow 60s  linear 10ms infinite;
@@ -541,16 +541,6 @@ div.comment-form
     font-size: 20px;
     text-shadow:0 2px 3px rgba(0,0,0,0.2);
     color:black;
-}
-.author{
-    display:inline-block;
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:url(http://www.blauwzaam.nl/content/typo3temp/pics/6c7af875f1.png) center no-repeat;
-    background-size:cover;
-    box-shadow:0 2px 3px rgba(0,0,0,0.3);
-    margin-bottom:3px
 }
 .info h4, .meta{
     font-size:0.7em;
@@ -573,8 +563,37 @@ div.comment-form
     padding-top:1px;
     color: white;
     background-color: black;
-    width: 100%
+    width: 100%;
+    -webkit-box-shadow: 0px 26px 51px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 26px 51px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 26px 51px -6px rgba(0,0,0,0.75);
 }
 .headtext h1{
     margin-top: 10px !important;
+}
+@keyframes grow{
+    0% { transform:scale(1)}
+    50% { transform:scale(1.2)}
+}
+#intern{
+    height: 500px;
+    background-color: #dad5c4;
+}
+.homecontainer{
+    overflow: hidden;
+}
+.newsfeed{
+    border: 1px solid red;
+    height: 100%;
+    width: 85%;
+}
+.recente-thread{
+    border: 1px solid red;
+    height: 40em;
+    width: 15%;
+}
+.jarig{
+    border: 1px solid red;
+    height: 21em;
+    width: 15%;
 }
