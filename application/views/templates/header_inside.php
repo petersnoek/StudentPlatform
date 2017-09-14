@@ -23,11 +23,11 @@
             </a>
         </li>
         <li><a href="<?php echo base_url();?>intern">Home <span class="icon"></span></a></li>
-        <li><a href="#">Live Chat <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>Live_chat">Live Chat <span class="icon"></span></a></li>
         <li><a href="<?php echo base_url();?>forum">Forum <span class="icon"></span></a></li>
-        <li><a href="#">Zorg <span class="icon"></span></a></a></li>
-        <li><a href="#">Roosters <span class="icon"></span></a></li>
-        <li><a href="#">Feedback  <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>zorg">Zorg <span class="icon"></span></a></a></li>
+        <li><a href="<?php echo base_url();?>roosters">Roosters <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>feedback">Feedback  <span class="icon"></span></a></li>
         <li><a href="<?php echo base_url();?>logout">Afmelden <span class="icon"></span></a></li>
     </ul>
 </nav>
