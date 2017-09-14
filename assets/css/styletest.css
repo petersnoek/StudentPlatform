@@ -336,6 +336,64 @@ body.nav-expanded {
 width: 50px;
 }
 .panel-body .table td{
-    border-top: red 0px solid;
+    border-top:  0px solid;
     width: 5rem;
+}
+.tablewijzig{
+    float: right;
+}
+.panelaccount{
+    margin-top: -21px;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 10rem;
+    color: #6d6d6d;
+    -webkit-box-shadow: inset 0px 18px 47px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 18px 47px -11px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 18px 47px -11px rgba(0,0,0,0.75);
+}
+
+footer .container{
+    color: silver;
+    width: 100%;
+}
+.fa{
+    color: #b8b8b8;
+
+}
+.fa:hover {
+    color: #7a7a7a;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.panel-heading{
+    background-color: #3e3e3d !important;
+    Border-color: #282827 !important;
+    border: 0px solid !important;
+}
+.panel-body{
+    background-color: #939492;
+    border-top: 0px solid;
+}
+table th{
+    font-weight: 900;
+}
+table span.right{
+    float: left;
+
+}
+table span.left{
+    float: left;
+    width: 200px;
+    font-weight: 600;
+
+
+}
+body{
+     color: black;
 }

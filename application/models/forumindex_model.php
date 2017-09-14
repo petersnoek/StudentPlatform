@@ -1,6 +1,6 @@
 <?php
 
-class inside_model extends CI_Model{
+class forumindex_model extends CI_Model{
 
     public function __construct()
     {

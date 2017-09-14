@@ -13,6 +13,11 @@ class user extends CI_Controller{
         $this->load->helper('url_helper');
         $this->load->model('user_model');
         $this->load->database();
+        if(!isset($_SESSION['user_logged'])){
+            /** wanneer  gebruiker niet is ingelogt stuur naar studentplaza/login met session error */
+            $this->session->set_flashdata('ERROR','U moet eerst aanmelden voordat u toegang krijgt tot deze pagina!');
+            redirect('login', 'Refresh');
+        }
     }
     /** het aanmaken van Mijn_profiel pagina */
     public function Mijn_profiel(){

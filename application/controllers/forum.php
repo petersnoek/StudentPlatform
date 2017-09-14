@@ -5,7 +5,7 @@
  * Date: 05-Sep-17
  * Time: 11:56 AM
  */
-class inside extends CI_Controller{
+class forum extends CI_Controller{
 
     public function __construct()
     {
@@ -17,15 +17,15 @@ class inside extends CI_Controller{
             redirect('login', 'Refresh');
         }
     }
-    /** het vullen van inside pagina */
+    /** het vullen van forum pagina */
     public function index(){
-        $this->load->model('inside_model');
+        $this->load->model('forumindex_model');
         /** $data['forums'] roept function binnen inside_model aan */
-        $data['forums'] = $this->inside_model->get_forums();
+        $data['forums'] = $this->forumindex_model->get_forums();
 
         $this->load->view('templates/header_inside');
-        /** inside view word geladen met $data gegevens */
-        $this->load->view('inside', $data);
+        /** forum view word geladen met $data gegevens */
+        $this->load->view('forum', $data);
         $this->load->view('templates/footer_inside');
     }
 }
