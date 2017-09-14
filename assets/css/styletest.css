@@ -339,7 +339,6 @@ width: 50px;
     border-top:  0px solid;
     width: 5rem;
 }
-<<<<<<< HEAD
 .tablewijzig{
     float: right;
 }
@@ -349,7 +348,7 @@ width: 50px;
 footer {
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 5%;
     background-color: #f8f9fa;
     text-align: center;
     padding: 2rem 10rem;
@@ -483,4 +482,99 @@ div.comment-form
    border-radius: 10px;
    background-color: #e6e6e6;
 
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+/** HEADER STYLING **/
+.header{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:50vw;
+    min-height:400px;
+    max-height:450px;
+    min-width:300px;
+    color:#eee;
+    margin-top: 3.6em;
+}
+.header:after{
+    content:"";
+    width:100%;
+    height:40%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:-1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+    background:#1B2030 url(https://cdlnws.a.ssl.fastly.net/image/upload/f_auto,q_auto/v1494865224/Blog/college_students.jpg) top center no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    animation: grow 60s  linear 10ms infinite;
+    transition:all 0.2s ease-in-out;
+    z-index:-2
+}
+.header a{
+    color:#eee
+}
+.sides, .info{
+    flex: 0 0 auto;
+    width:50%
+}
+.info{
+    width:100%;
+    padding:5% 10% 0 10%;
+    text-align:center;
+    font-size: 20px;
+    text-shadow:0 2px 3px rgba(0,0,0,0.2);
+    color:black;
+}
+.author{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:url(http://www.blauwzaam.nl/content/typo3temp/pics/6c7af875f1.png) center no-repeat;
+    background-size:cover;
+    box-shadow:0 2px 3px rgba(0,0,0,0.3);
+    margin-bottom:3px
+}
+.info h4, .meta{
+    font-size:0.7em;
+
+}
+.meta{
+    font-style:italic;
+}
+.container{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headtext{
+    margin-top: -20px;
+    height: 75px;
+    padding-top:1px;
+    color: white;
+    background-color: black;
+    width: 100%
+}
+.headtext h1{
+    margin-top: 10px !important;
 }

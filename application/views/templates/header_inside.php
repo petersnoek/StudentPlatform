@@ -44,5 +44,4 @@
 </div>
 <script src="/studentplaza/assets/js/inside-menu.js"></script>
 
-
         <?= $this->session->flashdata('ERROR');?>

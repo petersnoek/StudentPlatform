@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php echo (isset($pageTitle)) ? $pageTitle : 'intern'; ?> </title>
+    <title><?php echo (isset($pageTitle)) ? $pageTitle : 'Studentplaza'; ?> </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--inladen van bootstrap en fontawesome -->
