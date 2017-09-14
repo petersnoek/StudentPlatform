@@ -562,7 +562,7 @@ div.comment-form
     height: 75px;
     padding-top:1px;
     color: white;
-    background-color: black;
+    background-color: #222;
     width: 100%;
     -webkit-box-shadow: 0px 26px 51px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 26px 51px -6px rgba(0,0,0,0.75);

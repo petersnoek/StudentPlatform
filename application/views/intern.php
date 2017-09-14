@@ -11,7 +11,8 @@
     <div class="headtext"></div>
     <div class="newsfeed pull-left">
         <h1>Home page</h1>
-        <p>op deze pagina komt een news feed achtig iets</p>
+        <h2> Newsfeed</h2>
+        <p>news thats school related will get here</p>
     </div>
     <div class="recente-thread pull-right">
         <h3>Recente thread:</h3>
@@ -19,7 +20,7 @@
 
     </div>
     <div class="jarig pull-right">
-        <h3>Gefeliciteerd:</h3>
+        <h3>happy birthday:</h3>
         <p> Bertus (23)</p>
     </div>
 </div>
