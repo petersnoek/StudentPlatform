@@ -395,10 +395,9 @@ table span.left{
 
 
 }
-body{
-     color: black;
-=======
-
+body {
+    color: black;
+}
 td
 {
     border-bottom: 1px solid #ddd;
@@ -483,5 +482,5 @@ div.comment-form
    border: 2px solid #ddd;
    border-radius: 10px;
    background-color: #e6e6e6;
->>>>>>> cb078c55b20155db575aff112321e78581ff36e5
+
 }
