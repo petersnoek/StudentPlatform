@@ -17,7 +17,6 @@ class forum extends CI_Controller{
             redirect('login', 'Refresh');
         }
     }
-<<<<<<< HEAD:application/controllers/inside.php
     /** het vullen van inside pagina */
     public function index($forum_id = NULL){
         $this->load->model('inside_model');
@@ -25,12 +24,6 @@ class forum extends CI_Controller{
         $data['forums'] = $this->inside_model->get_forums();
         $data['num_comments'] = $this->inside_model->get_num_comments($forum_id);
         $data['num_rows'] = count($data['num_comments']);
-=======
-    /** het vullen van forum pagina */
-        $this->load->model('forumindex_model');
-        /** $data['forums'] roept function binnen inside_model aan */
-        $data['forums'] = $this->forumindex_model->get_forums();
->>>>>>> 100bda662ecf445f7e8e11b002796927c520e333:application/controllers/forum.php
 
         $this->load->view('templates/header_inside');
         /** forum view word geladen met $data gegevens */

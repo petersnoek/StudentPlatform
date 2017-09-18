@@ -27,7 +27,7 @@
                     <tr>
                         <td class="forum_title"><a class="title_link" href="<?php echo site_url('/forums/'.$forum['id']); ?>"><?php echo $forum['title']; ?></a></td>
                         <td><?php echo $forum['creator']; ?></td>
-                        <td><?php echo $num_rows; ?></td>
+                        <td><?php echo $num_comments; ?></td>
                     </tr>
                 </tbody>
             </table>

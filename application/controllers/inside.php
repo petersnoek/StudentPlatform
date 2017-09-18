@@ -23,7 +23,6 @@ class inside extends CI_Controller{
         /** $data['forums'] roept function binnen inside_model aan */
         $data['forums'] = $this->inside_model->get_forums();
         $data['num_comments'] = $this->inside_model->get_num_comments($forum_id);
-        $data['num_rows'] = count($data['num_comments']);
 
         $this->load->view('templates/header_inside');
         /** inside view word geladen met $data gegevens */
