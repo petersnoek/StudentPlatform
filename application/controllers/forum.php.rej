@@ -1,0 +1,9 @@
+diff a/application/controllers/forum.php b/application/controllers/forum.php	(rejected hunks)
+@@ -0,6 +0,7 @@
+             redirect('login', 'Refresh');
+         }
+     }
++<<<<<<< HEAD:application/controllers/inside.php
+     /** het vullen van inside pagina */
+     public function index($forum_id = NULL){
+         $this->load->model('inside_model');

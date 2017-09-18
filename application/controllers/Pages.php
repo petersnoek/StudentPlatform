@@ -1,7 +1,7 @@
 <?php
 class Pages extends CI_Controller {
 
-    public function view($page = 'inside')
+    public function view($page = 'forum')
     {
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
         {

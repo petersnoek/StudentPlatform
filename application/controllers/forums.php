@@ -7,6 +7,11 @@ class forums extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url_helper');
+        if(!isset($_SESSION['user_logged'])){
+            /** wanneer  gebruiker niet is ingelogt stuur naar studentplaza/login met session error */
+            $this->session->set_flashdata('ERROR','U moet eerst aanmelden voordat u toegang krijgt tot deze pagina!');
+            redirect('login', 'Refresh');
+        }
     }
 
     public function view($id = NULL)
@@ -19,7 +24,7 @@ class forums extends CI_Controller
 		if (empty($data['forum']))
 		{
 		    $this->session->set_flashdata('ERROR','De aangeklikte forum kan niet gevonden worden!');
-		    redirect('inside', 'Refresh');
+		    redirect('forum', 'Refresh');
 		}
 
 		$data['comments'] = $this->forums_model->get_comments_from_forum($id);
@@ -70,7 +75,7 @@ class forums extends CI_Controller
 		{
 			$this->load->model('forums_model');
 		    $this->forums_model->create_forum();
-		    redirect('inside', 'refresh');
+		    redirect('forum', 'refresh');
 		}
     }
 }

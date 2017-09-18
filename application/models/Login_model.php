@@ -44,8 +44,8 @@ class Login_model extends CI_Model{
                 $_SESSION['motto']=$user->motto;
                 $_SESSION['hobby']=$user->hobby;
                 $_SESSION['role']=$user->role_id;
-                /** nadat alles succes vol is gegaan stuur door naar studentplaza/inside */
-                redirect('inside', 'refresh');
+                /** nadat alles succes vol is gegaan stuur door naar studentplaza/forum */
+                redirect('intern', 'refresh');
             }
         }
         /** als query leeg is, refresh pagina en weergeef sessions error op login form*/

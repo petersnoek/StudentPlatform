@@ -22,12 +22,12 @@
             </div>
             </a>
         </li>
-        <li><a href="<?php echo base_url();?>inside">Home <span class="icon"></span></a></li>
-        <li><a href="#">Live Chat <span class="icon"></span></a></li>
-        <li><a href="#">Forum <span class="icon"></span></a></li>
-        <li><a href="#">Zorg <span class="icon"></span></a></a></li>
-        <li><a href="#">Roosters <span class="icon"></span></a></li>
-        <li><a href="#">Feedback  <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>intern">Home <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>Live_chat">Live Chat <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>forum">Forum <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>zorg">Zorg <span class="icon"></span></a></a></li>
+        <li><a href="<?php echo base_url();?>roosters">Roosters <span class="icon"></span></a></li>
+        <li><a href="<?php echo base_url();?>feedback">Feedback  <span class="icon"></span></a></li>
         <li><a href="<?php echo base_url();?>logout">Afmelden <span class="icon"></span></a></li>
     </ul>
 </nav>
@@ -35,7 +35,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 
     <!--Include your brand here-->
-    <a class="navbar-brand" href="<?php echo base_url();?>inside">StudentPlaza</a>
+    <a class="navbar-brand" href="<?php echo base_url();?>intern">StudentPlaza</a>
     <div class="navbar-header pull-right">
         <a id="nav-expander" class="nav-expander fixed">
             MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
@@ -43,6 +43,5 @@
     </div>
 </div>
 <script src="/studentplaza/assets/js/inside-menu.js"></script>
-
 
         <?= $this->session->flashdata('ERROR');?>

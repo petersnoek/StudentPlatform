@@ -18,9 +18,8 @@
         </div>
         <div class="card-info"> <span class="card-title"><?php echo $_SESSION['username'];?></span></div>
     </div>
-    <div>
         <div class="panel panel-default">
-            <div class="panel-heading">Mijn Profiel</div>
+            <div class="panel-heading">Mijn Profiel <a class="tablewijzig" href="wijzig">Wijzig profiel hier</a></div>
             <div class="panel-body">
                 <table class="table">
                 <tr>
@@ -28,35 +27,32 @@
                     <th>School:</th>
                 </tr>
                 <tr>
-                    <td>Rank: <?php echo $user['role_id'];?></td>
-                    <td>Klas: <?php echo $user['klas'];?></td>
+                    <td><span class="left">Rank:</span><span class="right"><?php echo $user['role_id'];?></span></td>
+                    <td><span class="left">Klas:</span><span class="right"><?php echo $user['klas'];?></span></td>
+            </tr>
+                <tr>
+                    <td><span class="left">Motto: </span><span class="right"><?php echo $user['motto'];?></span></td>
+                    <td><span class="left">Leerling nummer:  </span><span class="right"><?php echo $user['leerling_nr'];?></span></td>
                 </tr>
                 <tr>
-                    <td>Motto: <?php echo $user['motto'];?></td>
-                    <td>Leerling nummer:  <?php echo $user['leerling_nr'];?></td>
+                    <td><span class="left">Hobbies: </span><span class="right"><?php echo $user['hobby'];?></span></td>
                 </tr>
                 <tr>
-                    <td>Hobbies: <?php echo $user['hobby'];?></td>
+                    <td><span class="left">Geslacht: </span><span class="right"><?php echo $user['geslacht'];?></span></td>
                 </tr>
                 <tr>
-                    <td>Geslacht: <?php echo $user['geslacht'];?></td>
-                </tr>
-                <tr>
-                    <td>Geboortedatum: <?php echo $user['geboortedatum'];?></td>
+                    <td><span class="left">Geboortedatum: </span><span class="right"><?php echo $user['geboortedatum'];?></span></td>
                 </tr>
                 </table>
-
-
-
-
-
-
-                <a href="wijzig">Wijzig profiel hier</a>
             </div>
         </div>
+    <div class="panel panel-default panelaccount">
+        <div class="panel-heading">Account gegevens</div>
+        <div class="panel-body">
+            <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>
+            <p>Uw Leerling nummer:  <?php echo $user['leerling_nr'];?></p>
+            <p>Uw E-mail addres: <?php echo $user['email'];?></p>
+        </div>
     </div>
-    <p> Account gegevens:</p>
-    <p>Uw Gebruikersnaam:  <?php echo $user['username'];?></p>
-    <p>Uw Leerling nummer:  <?php echo $user['leerling_nr'];?></p>
-    <p>Uw E-mail addres: <?php echo $user['email'];?></p>
+
 </div>
