@@ -14,4 +14,10 @@ class inside_model extends CI_Model{
     	$query = $this->db->get('forums');
     	return $query->result_array();
     }
+
+    public function get_num_comments($forum_id = '')
+    {
+        $query = $this->db->get_where('forum_reactions', array('forum_id' => '1'));
+        return $query->result();
+    }
 }

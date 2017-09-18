@@ -18,10 +18,12 @@ class inside extends CI_Controller{
         }
     }
     /** het vullen van inside pagina */
-    public function index(){
+    public function index($forum_id = NULL){
         $this->load->model('inside_model');
         /** $data['forums'] roept function binnen inside_model aan */
         $data['forums'] = $this->inside_model->get_forums();
+        $data['num_comments'] = $this->inside_model->get_num_comments($forum_id);
+        $data['num_rows'] = count($data['num_comments']);
 
         $this->load->view('templates/header_inside');
         /** inside view word geladen met $data gegevens */
