@@ -8,11 +8,11 @@
 
 class Login_model extends CI_Model{
 
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
     }
-    public function  check_user(){
+    function  check_user(){
 
         /** beide vars  roepen velden aan van login form */
         $username = $_POST['username'];

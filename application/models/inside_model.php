@@ -2,20 +2,20 @@
 
 class inside_model extends CI_Model{
 
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
         $this->load->database();
     }
 
-    public function get_forums()
+    function get_forums()
     {
         /** @var query haalt alles uit table forums */
     	$query = $this->db->get('forums');
     	return $query->result_array();
     }
 
-    public function get_num_comments($forum_id = '')
+    function get_num_comments($forum_id = '')
     {
         $this->db->select();
         $this->db->from('forum_reactions');

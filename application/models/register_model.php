@@ -2,12 +2,12 @@
 class register_model extends CI_Model
 {
 
-	public function __construct()
+	function __construct()
 	{
 		$this->load->database();
 	}
 /** function set_user word aangeroepen door register controller */
-	public function set_user()
+	function set_user()
 	{
 	    /** data array word gebruikt op de query klein te houden (array word gevuld met gegevens van register form */
         $data = array(

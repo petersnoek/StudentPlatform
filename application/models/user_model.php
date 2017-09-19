@@ -6,14 +6,14 @@
  * Time: 11:57 AM
  */
 class user_model extends CI_Model{
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
         $this->load->database();
     }
 
 
-    public function recieve (){
+    function recieve (){
 
         $username = $_SESSION['username'];
         $this->db->select('*');
@@ -27,7 +27,7 @@ class user_model extends CI_Model{
         else {return NULL;}
 
     }
-    public function send(){
+    function send(){
         $id= $this->input->post('user_id');
         $data = array(
             'motto' => $this->input->post('motto'),
@@ -40,7 +40,7 @@ class user_model extends CI_Model{
         $this->db->where('user_id', $id);
         $this->db->update('users', $data);
     }
-    public  function up_avatar($new){
+    function up_avatar($new){
         $avatar = $new;
         $id= $this->input->post('user_id');
         $this->db->where('user_id', $id);
