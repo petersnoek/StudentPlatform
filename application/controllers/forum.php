@@ -19,12 +19,11 @@ class forum extends CI_Controller{
     }
     /** het vullen van inside pagina */
     public function index($forum_id = NULL){
-        $this->load->model('inside_model');
+        $this->load->model('forumindex_model');
         /** $data['forums'] roept function binnen inside_model aan */
-        $forum_id = $this->session->userdata('forum_id');
-        
-        $data['forums'] = $this->inside_model->get_forums();
-        $data['num_comments'] = $this->inside_model->get_num_comments($forum_id);
+
+        $data['forums'] = $this->forumindex_model->get_forums();
+        $data['num_comments'] = $this->forumindex_model->get_num_comments($forum_id);
 
         $this->load->view('templates/header_inside');
         /** forum view word geladen met $data gegevens */

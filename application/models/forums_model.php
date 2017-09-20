@@ -40,8 +40,6 @@ class forums_model extends CI_Model{
           'description' => $this->input->post('description')
         );
 
-        $this->session->set_userdata($data);
-
         return $this->db->insert('forum_reactions', $data);
     }
 

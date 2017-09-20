@@ -19,7 +19,7 @@ class forumindex_model extends CI_Model{
     {
         $this->db->select();
         $this->db->from('forum_reactions');
-        $this->db->where('forum_id', $forum_id);
+        $this->db->where('forum_id', 1);
 
         $query = $this->db->get();
 
