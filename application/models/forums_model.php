@@ -6,6 +6,7 @@ class forums_model extends CI_Model{
     {
         parent::__construct();
         $this->load->database();
+        $this->load->library('session');
     }
 
    	function get_forum($id = '')
@@ -38,6 +39,8 @@ class forums_model extends CI_Model{
           'date_time_reaction' => $this->input->post('date_time_reaction'),
           'description' => $this->input->post('description')
         );
+
+        $this->session->set_userdata($data);
 
         return $this->db->insert('forum_reactions', $data);
     }
