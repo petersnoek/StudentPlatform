@@ -18,6 +18,11 @@ class intern extends CI_Controller{
             $this->session->set_flashdata('ERROR','U moet eerst aanmelden voordat u toegang krijgt tot deze pagina!');
             redirect('login', 'Refresh');
         }
+
+        if(isset($_SESSION['role']) && $_SESSION['role'] == 4)
+        {
+            redirect('WelcomeAdmin', 'Refresh');
+        }
     }
     /** het vullen van forum pagina */
     public function index(){

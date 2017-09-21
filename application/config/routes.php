@@ -63,6 +63,7 @@ $route['roosters'] = 'roosters';
 $route['feedback'] = 'feedback';
 $route['register'] = 'register';
 $route['WelcomeAdmin'] = 'WelcomeAdmin';
+$route['management'] = 'management';
 $route['default_controller'] = 'index';
 $route['(:any)'] = 'pages/view/$1';
 

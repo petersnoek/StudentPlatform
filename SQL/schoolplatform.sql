@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 19 sep 2017 om 09:56
+-- Gegenereerd op: 21 sep 2017 om 14:33
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -82,18 +82,20 @@ CREATE TABLE IF NOT EXISTS `users` (
   `avatar` varbinary(8000) DEFAULT NULL,
   `hobby` varchar(254) NOT NULL,
   `motto` varchar(254) NOT NULL,
+  `role_id` int(1) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `leerling_nr`, `klas`, `geslacht`, `geboortedatum`, `avatar`, `hobby`, `motto`) VALUES
-(1, 'test', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '1996-11-04', NULL, '', ''),
-(2, '12', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '0000-00-00', NULL, '', ''),
-(3, 'vuurigebowey', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '1996-11-04', NULL, 'mountainbiken', 'test'),
-(4, 'Romy96', '27fa9d3a680e68b32cfe2cd22bbdba28', 'romybijkerk1996@gmail.com', '99028323', '15A0', 'vrouw', '1996-05-03', NULL, '', '');
+INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `leerling_nr`, `klas`, `geslacht`, `geboortedatum`, `avatar`, `hobby`, `motto`, `role_id`) VALUES
+(1, 'test', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '1996-11-04', NULL, '', '', 0),
+(2, '12', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '0000-00-00', NULL, '', '', 0),
+(3, 'vuurigebowey', '25d55ad283aa400af464c76d713c07ad', '99022270@mydavinci.nl', '99022270', 'MBIAO15A0', 'man', '1996-11-04', NULL, 'mountainbiken', 'test', 0),
+(4, 'Romy96', '27fa9d3a680e68b32cfe2cd22bbdba28', 'romybijkerk1996@gmail.com', '99028323', '15A0', 'vrouw', '1996-05-03', NULL, '', '', 0),
+(5, 'PeterSnoek', 'f19a86bcd60e668b1d8a2b8530f8b9f4', 'snp@davinci.nl', '99074362', '15A0', 'man', '1975-05-25', '1.png', '', '', 4);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -120,7 +120,7 @@
 			if(isset($_SESSION['user_logged'])):
 			?>
             <li><a href="<?php echo base_url();?>logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Uitloggen</a></li>
-            <li><a href="<?php echo base_url();?>users"><i class="fa fa-users" aria-hidden="true"></i>Gebruikers</a></li>
+            <li><a href="<?php echo base_url();?>management"><i class="fa fa-database" aria-hidden="true"></i>Beheer</a></li>
             <?php
             endif;
             ?>

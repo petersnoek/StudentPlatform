@@ -1,8 +1,7 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class WelcomeAdmin extends CI_Controller {
-	
+class management extends CI_controller
+{
 	public function __construct()
     {
 
@@ -22,10 +21,10 @@ class WelcomeAdmin extends CI_Controller {
         }
     }
 
-	public function index()
-	{
-		$this->load->view('templates/header_homepage_admin');
-        $this->load->view('WelcomeAdmin');
+    public function index()
+    {
+    	$this->load->view('templates/headerBackend');
+        $this->load->view('management');
         $this->load->view('templates/footerBackend');
-	}
+    }
 }
