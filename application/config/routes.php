@@ -64,11 +64,13 @@ $route['feedback'] = 'feedback';
 $route['register'] = 'register';
 $route['WelcomeAdmin'] = 'WelcomeAdmin';
 $route['management'] = 'management';
+$route['users'] = 'users';
 $route['default_controller'] = 'index';
 $route['(:any)'] = 'pages/view/$1';
 
 $route['forums'] = 'forums';
 $route['forums/create'] = 'forums/create';
 $route['forums/(:any)'] = 'forums/view/$1';
+
 
 
