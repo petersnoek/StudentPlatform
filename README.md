@@ -26,3 +26,14 @@ om dit zoveel handig mogelijk te maken hebben wij gekozen voor een paar belangri
 ## ons doel
 ons doel is studenten van alle opleidingen te laten communiceren met elkaar zodat MBO Gorinchem een socialere school kan worden. ook hopen wij hier mee het personeel van MBO Gorinchem een beter zicht te geven van de voorkeur van de studenten, Studenten sneller te kunnen helpen met persoonlijke problemen.
 
+## installatie op een nieuwe ontwikkelomgeving
+Om de sources te laten werken op een nieuwe ontwikkelomgeving zijn een aantal stappen nodig.
+Hieronder de stappen voor een macbook, met apache/php/mysql en phpmyadmin. 
+Vermoedelijk werkt dit ook op een windows computer met XAMPP of WAMP of AMPPS.
+* map maken
+* sourcetree koppelen repo en lokale map
+* database aanmaken in phpmyadmin
+* sql file runnen
+* /config/database aanpassen (dbname, dbuser, dbpass)
+* /config/config aanpassen (base_url)
+
